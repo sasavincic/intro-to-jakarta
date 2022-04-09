@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:h="http://xmlns.jcp.org/jsf/html"
+	  xmlns:f="http://xmlns.jcp.org/jsf/core"
+	  xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<meta charset="UTF-8" />
+	<title>Sistem e-vinjet</title>
+	<f:metadata>
+		<f:viewParam name="id" value="#{demo.selectedIdNakup}" />
+	</f:metadata>
+	<link rel="stylesheet" href="css/styles.css" />
+</h:head>
+
+<h:body>
+<f:view>
+	<p:menubar>
+		<p:menuitem value="Nakupi" url="#{facesContext.externalContext.applicationContextPath}/faces/listNakup.xhtml" />
+		<p:menuitem value="Tipi Vinjet" url="#{facesContext.externalContext.applicationContextPath}/faces/listTipVinjete.xhtml" />
+		<p:menuitem value="Prodajalci" url="#{facesContext.externalContext.applicationContextPath}/faces/listProdajalec.xhtml" />
+		<p:menuitem value="Dodaj Nakup" url="#{facesContext.externalContext.applicationContextPath}/faces/inputNakup.xhtml?id=0" />
+		<p:menuitem value="Dodaj Tip Vinjete" url="#{facesContext.externalContext.applicationContextPath}/faces/inputTipVinjete.xhtml?id=0" />
+		<p:menuitem value="Dodaj Prodajalca" url="#{facesContext.externalContext.applicationContextPath}/faces/inputProdajalec.xhtml?id=0" />
+		<p:menuitem value="Preveri" url="#{facesContext.externalContext.applicationContextPath}/faces/preveri.xhtml" />
+	</p:menubar>
+	<div style="padding: 3rem">
+		<h:form>
+			<div class="formContainer">
+				<p:outputLabel for="n_registrskaOznakaVozila" value="Registrska oznaka vozila" />
+				<p:inputText id="n_registrskaOznakaVozila" value="#{demo.selectedNakup.registrskaOznakaVozila}" />
+			</div>
+			<div class="formContainer">
+				<p:outputLabel class="formLabel" for="n_tipVinjete" value="Tip Vinjete" />
+				<p:selectOneMenu id="n_tipVinjete" value="#{demo.tempIdTipa}">
+					<f:selectItems value="#{demo.allTipVinjete}" var="tip" itemValue="#{tip.id}"></f:selectItems>
+				</p:selectOneMenu>
+			</div>
+			<div class="formContainer">
+				<p:outputLabel class="formLabel" for="n_tipVozila" value="Tip Vozila" />
+				<p:inputText id="n_tipVozila" value="#{demo.selectedNakup.tipVozila}" />
+			</div>
+			<div class="formContainer">
+				<p:outputLabel class="formLabel" for="n_prodajalec" value="Prodajalec" />
+				<p:selectOneMenu id="n_prodajalec" value="#{demo.tempIdProdajalca}">
+					<f:selectItems value="#{demo.allProdajalec}" var="prodajalec" itemValue="#{prodajalec.id}"></f:selectItems>
+				</p:selectOneMenu>
+			</div>
+			<div class="formContainer">
+				<p:commandButton value="Shrani" action="#{demo.saveNakup()}"/>
+			</div>
+		</h:form>
+	</div>
+</f:view>
+</h:body>
+
+</html>
+
+
+
+				
+					

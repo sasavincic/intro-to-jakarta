@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <meta charset="UTF-8" />
+    <title>Sistem e-vinjet</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</h:head>
+
+<h:body>
+    <f:view>
+        <p:menubar>
+            <p:menuitem value="Nakupi" url="#{facesContext.externalContext.applicationContextPath}/faces/listNakup.xhtml" />
+            <p:menuitem value="Tipi Vinjet" url="#{facesContext.externalContext.applicationContextPath}/faces/listTipVinjete.xhtml" />
+            <p:menuitem value="Prodajalci" url="#{facesContext.externalContext.applicationContextPath}/faces/listProdajalec.xhtml" />
+            <p:menuitem value="Dodaj Nakup" url="#{facesContext.externalContext.applicationContextPath}/faces/inputNakup.xhtml?id=0" />
+            <p:menuitem value="Dodaj Tip Vinjete" url="#{facesContext.externalContext.applicationContextPath}/faces/inputTipVinjete.xhtml?id=0" />
+            <p:menuitem value="Dodaj Prodajalca" url="#{facesContext.externalContext.applicationContextPath}/faces/inputProdajalec.xhtml?id=0" />
+            <p:menuitem value="Preveri" url="#{facesContext.externalContext.applicationContextPath}/faces/preveri.xhtml" />
+        </p:menubar>
+        <div style="padding: 3rem">
+            <h:form>
+                <div class="formContainer">
+                    <p:outputLabel for="n_registrskaOznakaVozila" value="Registrska oznaka vozila" />
+                    <p:inputText id="n_registrskaOznakaVozila" value="#{kontrolor.registrskaOznakaVozila}" />
+                </div>
+                <div class="formContainer">
+                    <p:commandButton value="Preveri" action="#{kontrolor.checkForVinjeta()}" ajax="false" />
+                </div>
+                <div>
+                    <p>#{kontrolor.message}</p>
+                </div>
+            </h:form>
+        </div>
+    </f:view>
+</h:body>
+
+</html>
+
+
+
+

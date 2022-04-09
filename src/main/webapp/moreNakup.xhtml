@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:h="http://xmlns.jcp.org/jsf/html"
+	  xmlns:f="http://xmlns.jcp.org/jsf/core"
+	  xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<meta charset="UTF-8" />
+	<f:metadata>
+		<f:viewParam name="id" value="#{demo.selectedIdNakup}" />
+	</f:metadata>
+	<title>Sistem e-vinjet</title>
+</h:head>
+
+<h:body>
+	<f:view>
+		<p:menubar>
+			<p:menuitem value="Nakupi" url="#{facesContext.externalContext.applicationContextPath}/faces/listNakup.xhtml" />
+			<p:menuitem value="Tipi Vinjet" url="#{facesContext.externalContext.applicationContextPath}/faces/listTipVinjete.xhtml" />
+			<p:menuitem value="Prodajalci" url="#{facesContext.externalContext.applicationContextPath}/faces/listProdajalec.xhtml" />
+			<p:menuitem value="Dodaj Nakup" url="#{facesContext.externalContext.applicationContextPath}/faces/inputNakup.xhtml?id=0" />
+			<p:menuitem value="Dodaj Tip Vinjete" url="#{facesContext.externalContext.applicationContextPath}/faces/inputTipVinjete.xhtml?id=0" />
+			<p:menuitem value="Dodaj Prodajalca" url="#{facesContext.externalContext.applicationContextPath}/faces/inputProdajalec.xhtml?id=0" />
+			<p:menuitem value="Preveri" url="#{facesContext.externalContext.applicationContextPath}/faces/preveri.xhtml" />
+		</p:menubar>
+		<ul class="moreList">
+			<li class="moreListItem">Registrska oznaka vozila: #{demo.selectedNakup.registrskaOznakaVozila}</li>
+			<li class="moreListItem">Tip vinjete: #{demo.selectedNakup.tipVinjete}</li>
+			<li class="moreListItem">Tip vozila: #{demo.selectedNakup.tipVozila}</li>
+			<li class="moreListItem">Prodajalec: #{demo.selectedNakup.prodajalec}</li>
+			<li class="moreListItem">Datum nakupa: #{demo.selectedNakup.datumNakupa}</li>
+			<li class="moreListItem">Datum začetka veljavnosti:	#{demo.selectedNakup.datumZacetkaVeljavnosti}</li>
+		</ul>
+</f:view>
+</h:body>
+
+</html>
+
