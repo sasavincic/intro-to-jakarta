@@ -16,7 +16,7 @@ public class Nakup implements ObservedPart {
 
 	private String registrskaOznakaVozila;
 
-	@ManyToOne
+	@ManyToOne(cascade = CascadeType.ALL)
 	private TipVinjete tipVinjete;
 
 	private String tipVozila;
@@ -25,7 +25,7 @@ public class Nakup implements ObservedPart {
 
 	private LocalDate datumZacetkaVeljavnosti;
 
-	@ManyToOne
+	@ManyToOne(cascade = CascadeType.ALL)
 	private Prodajalec prodajalec;
 
 	@Transient

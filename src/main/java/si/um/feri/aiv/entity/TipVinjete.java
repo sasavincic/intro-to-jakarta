@@ -17,6 +17,13 @@ public class TipVinjete {
     private Integer veljavnostVinjete;
 
     public TipVinjete(){}
+
+    public TipVinjete(String naziv, String tipVozila, Integer veljavnostVinjete) {
+        this.naziv = naziv;
+        this.tipVozila = tipVozila;
+        this.veljavnostVinjete = veljavnostVinjete;
+    }
+
     public TipVinjete(String naziv, String tipVozila, Integer veljavnostVinjete, Integer id) {
         this.naziv = naziv;
         this.tipVozila = tipVozila;

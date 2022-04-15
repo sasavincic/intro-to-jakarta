@@ -8,7 +8,6 @@ import jakarta.ws.rs.core.Response;
 import jakarta.ws.rs.core.UriInfo;
 import si.um.feri.aiv.dao.NakupDao;
 import si.um.feri.aiv.dto.NakupDTO;
-import si.um.feri.aiv.entity.Nakup;
 
 import java.util.logging.Logger;
 
@@ -41,25 +40,33 @@ public class NakupResource {
     @POST
     public Response addNakup(NakupDTO nakupDTO) throws Exception {
         log.info("POST: " + context.getPath());
+        System.out.println(nakupDTO.toString());
         nakupPostgresDao.save(nakupDTO.nakupDTOtoNakup());
         return Response.status(Response.Status.CREATED).build();
     }
 
     @PUT
     @Path("/{id}")
-    public Response updateNakup(@PathParam("id") Integer id, Nakup nakup) throws Exception {
+    public Response updateNakup(@PathParam("id") Integer id, NakupDTO nakupDTO) throws Exception {
         log.info("POST: " + context.getPath());
+        System.out.println(nakupDTO.toString());
         if (nakupPostgresDao.find(id) == null){
             return Response.status(Response.Status.NOT_FOUND).build();
         }
-        nakupPostgresDao.save(nakup);
+        nakupPostgresDao.save(nakupDTO.nakupDTOtoNakup());
         return Response.status(Response.Status.CREATED).build();
     }
 
     @GET
-    public Response checkForVinjeta(String registrskaOznakaVozila) throws Exception{
+    @Path("/checkForVinjeta/{registrskaOznakaVozila}")
+    public Response checkForVinjeta(@PathParam("registrskaOznakaVozila") String registrskaOznakaVozila) throws Exception {
         log.info("GET: " + context.getPath());
-        return Response.ok(nakupPostgresDao.checkForVinjeta(registrskaOznakaVozila)).build();
+        try {
+            boolean valid = nakupPostgresDao.checkForVinjeta(registrskaOznakaVozila);
+            return Response.ok(valid).build();
+        } catch (Exception e) {
+            return Response.ok(e.getMessage()).build();
+        }
     }
 
 }

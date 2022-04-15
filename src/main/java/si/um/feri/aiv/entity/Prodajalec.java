@@ -17,6 +17,10 @@ public class Prodajalec {
 
     public Prodajalec(){}
 
+    public Prodajalec(String naziv) {
+        this.naziv = naziv;
+    }
+
     public Prodajalec(String naziv, Integer steviloProdanihVinjet, Integer id){
         this.naziv = naziv;
         this.steviloProdanihVinjet = steviloProdanihVinjet;
