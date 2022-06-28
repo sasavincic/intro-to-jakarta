@@ -1,0 +1,1187 @@
+2022-04-08 07:59:21,500 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.0.Final
+2022-04-08 07:59:22,329 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.13.Final
+2022-04-08 07:59:22,336 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2022-04-08 07:59:22,437 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Preview 26.0.1.Final (WildFly Core 18.0.4.Final) starting
+2022-04-08 07:59:22,439 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	file.encoding = US-ASCII
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	java.awt.headless = true
+	java.class.path = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/jboss-modules.jar
+	java.class.version = 61.0
+	java.home = /Library/Java/JavaVirtualMachines/jdk-17.0.2.jdk/Contents/Home
+	java.io.tmpdir = /var/folders/m1/v1ygjssd255b_vtvd2yx4sxr0000gn/T/
+	java.library.path = /Users/sasavincic/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 17.0.2+8-LTS-86
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = https://java.oracle.com/
+	java.vendor.url.bug = https://bugreport.java.com/bugreport/
+	java.version = 17.0.2
+	java.version.date = 2022-01-18
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode, sharing
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 17.0.2+8-LTS-86
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final
+	jboss.host.name = sasas-macbook-pro
+	jboss.modules.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = sasas-macbook-pro
+	jboss.qualified.host.name = sasas-macbook-pro.local
+	jboss.server.base.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone
+	jboss.server.config.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration
+	jboss.server.data.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data
+	jboss.server.deploy.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content
+	jboss.server.log.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/log
+	jboss.server.name = sasas-macbook-pro
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration/logging.properties
+	module.path = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/modules
+	native.encoding = US-ASCII
+	org.jboss.boot.log.file = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = x86_64
+	os.name = Mac OS X
+	os.version = 12.3.1
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	sun.arch.data.model = 64
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk-17.0.2.jdk/Contents/Home/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/jboss-modules.jar -mp /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/modules org.jboss.as.standalone -Djboss.home.dir=/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final -Djboss.server.base.dir=/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	user.country = SI
+	user.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/bin
+	user.home = /Users/sasavincic
+	user.language = en
+	user.name = sasavincic
+	user.timezone = Europe/Ljubljana
+2022-04-08 07:59:22,443 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED -Dorg.jboss.boot.log.file=/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/log/server.log -Dlogging.configuration=file:/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration/logging.properties 
+2022-04-08 07:59:23,671 INFO  [org.wildfly.security] (ServerService Thread Pool -- 26) ELY00001: WildFly Elytron version 1.18.3.Final
+2022-04-08 07:59:30,323 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 38) WFLYDR0001: Content added at location /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/a1/a40a852190ee139198e8ff45e9eeb222a3dcad/content
+2022-04-08 07:59:30,393 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2022-04-08 07:59:30,417 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.8.5.Final
+2022-04-08 07:59:30,427 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.8.5.Final
+2022-04-08 07:59:30,498 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 55) WFLYCLINF0001: Activating Infinispan subsystem.
+2022-04-08 07:59:30,545 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 53) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2022-04-08 07:59:30,545 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 67) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2022-04-08 07:59:30,565 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 76) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2022-04-08 07:59:30,547 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 57) WFLYRS0016: RESTEasy version 6.0.0.Beta1
+2022-04-08 07:59:30,577 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 66) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2022-04-08 07:59:30,576 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 69) WFLYNAM0001: Activating Naming Subsystem
+2022-04-08 07:59:30,576 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 78) WFLYWS0002: Activating WebServices Extension
+2022-04-08 07:59:30,579 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 62) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2022-04-08 07:59:30,590 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 68) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2022-04-08 07:59:30,621 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 56) WFLYIO001: Worker 'default' has auto-configured to 20 IO threads with 160 max task threads based on your 10 available processors
+2022-04-08 07:59:30,645 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 54) WFLYHEALTH0001: Activating Base Health Subsystem
+2022-04-08 07:59:30,672 INFO  [org.jboss.remoting] (MSC service thread 1-7) JBoss Remoting version 5.0.23.Final
+2022-04-08 07:59:30,686 INFO  [org.jboss.as.connector] (MSC service thread 1-8) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 1.5.3.Final)
+2022-04-08 07:59:30,742 INFO  [org.jboss.as.naming] (MSC service thread 1-2) WFLYNAM0003: Starting Naming Service
+2022-04-08 07:59:30,757 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 65) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2022-04-08 07:59:30,779 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0001: Bound mail session [java:jboss/mail/TestMail]
+2022-04-08 07:59:30,780 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2022-04-08 07:59:30,790 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0003: Undertow 2.2.14.Final starting
+2022-04-08 07:59:30,835 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 45) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2022-04-08 07:59:30,857 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = h2
+2022-04-08 07:59:31,020 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 160 (per class), which is derived from thread worker pool sizing.
+2022-04-08 07:59:31,018 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 40 (per class), which is derived from the number of CPUs on this host.
+2022-04-08 07:59:31,288 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 77) WFLYUT0014: Creating file handler for path '/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2022-04-08 07:59:31,317 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0012: Started server default-server.
+2022-04-08 07:59:31,332 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-7) WFLYELY00023: KeyStore file '/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration/application.keystore' does not exist. Used blank.
+2022-04-08 07:59:31,334 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) Queuing requests.
+2022-04-08 07:59:31,345 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0018: Host default-host starting
+2022-04-08 07:59:31,364 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-6) WFLYELY01084: KeyStore /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2022-04-08 07:59:31,429 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2022-04-08 07:59:31,585 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2022-04-08 07:59:31,787 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2022-04-08 07:59:31,833 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2022-04-08 07:59:32,072 INFO  [org.jboss.as.patching] (MSC service thread 1-6) WFLYPAT0050: WildFly Preview cumulative patch ID is: base, one-off patches include: none
+2022-04-08 07:59:32,108 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-3) WFLYMSGAMQ0001: AIO wasn't located on this platform, it will fall back to using pure Java NIO.
+2022-04-08 07:59:32,127 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/deployments
+2022-04-08 07:59:32,137 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "mysql-connector-java-8.0.27.jar" (runtime-name: "mysql-connector-java-8.0.27.jar")
+2022-04-08 07:59:32,137 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "postgresql-42.3.1.jar" (runtime-name: "postgresql-42.3.1.jar")
+2022-04-08 07:59:32,209 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 80) AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/activemq/journal,bindingsDirectory=/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/activemq/bindings,largeMessagesDirectory=/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/activemq/largemessages,pagingDirectory=/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/activemq/paging)
+2022-04-08 07:59:32,249 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBossWS 5.4.4.Final (Apache CXF 3.4.5) 
+2022-04-08 07:59:32,279 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 80) AMQ221013: Using NIO Journal
+2022-04-08 07:59:32,434 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 80) AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2022-04-08 07:59:32,441 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 80) AMQ221043: Protocol module found: [artemis-amqp-protocol]. Adding protocol support for: AMQP
+2022-04-08 07:59:32,442 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 80) AMQ221043: Protocol module found: [artemis-hornetq-protocol]. Adding protocol support for: HORNETQ
+2022-04-08 07:59:32,442 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 80) AMQ221043: Protocol module found: [artemis-stomp-protocol]. Adding protocol support for: STOMP
+2022-04-08 07:59:32,694 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 80) AMQ221034: Waiting indefinitely to obtain live lock
+2022-04-08 07:59:32,699 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 80) AMQ221035: Live Server Obtained live lock
+2022-04-08 07:59:33,103 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 80) AMQ221003: Deploying ANYCAST queue jms.queue.ExpiryQueue on address jms.queue.ExpiryQueue
+2022-04-08 07:59:33,114 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 80) AMQ221003: Deploying ANYCAST queue jms.queue.DLQ on address jms.queue.DLQ
+2022-04-08 07:59:33,114 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 80) AMQ221003: Deploying ANYCAST queue jms.queue.testQueue on address jms.queue.testQueue
+2022-04-08 07:59:33,190 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-2) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+2022-04-08 07:59:33,190 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-1) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+2022-04-08 07:59:33,190 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-7) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+2022-04-08 07:59:33,190 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-4) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+2022-04-08 07:59:33,612 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 80) AMQ221007: Server is now live
+2022-04-08 07:59:33,620 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 80) AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.19.0 [default, nodeID=4f129d40-b4ab-11ec-a013-f84d8979d84c] 
+2022-04-08 07:59:33,633 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 80) WFLYMSGAMQ0002: Bound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2022-04-08 07:59:33,655 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 82) WFLYMSGAMQ0002: Bound messaging object to jndi name java:/ConnectionFactory
+2022-04-08 07:59:33,689 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.cj.jdbc.Driver (version 8.0)
+2022-04-08 07:59:33,714 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.3)
+2022-04-08 07:59:33,726 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = mysql-connector-java-8.0.27.jar
+2022-04-08 07:59:33,730 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = postgresql-42.3.1.jar
+2022-04-08 07:59:33,738 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-3) WFLYJCA0007: Registered connection factory java:/JmsXA
+2022-04-08 07:59:33,747 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/datasources/MySqlDS]
+2022-04-08 07:59:33,747 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Bound data source [java:jboss/datasources/PostgresDS]
+2022-04-08 07:59:33,836 INFO  [org.apache.activemq.artemis.ra.ActiveMQRALogger] (MSC service thread 1-3) AMQ151007: Resource adaptor started
+2022-04-08 07:59:33,844 INFO  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-3) IJ020002: Deployed: file://RaActivatoractivemq-ra
+2022-04-08 07:59:33,850 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-4) WFLYJCA0118: Binding connection factory named java:/JmsXA to alias java:jboss/DefaultJMSConnectionFactory
+2022-04-08 07:59:33,850 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-2) WFLYJCA0002: Bound Jakarta Connectors ConnectionFactory [java:/JmsXA]
+2022-04-08 07:59:34,128 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 83) ISPN000128: Infinispan version: Infinispan 'Taedonggang' 12.1.7.Final
+2022-04-08 07:59:34,186 INFO  [org.infinispan.CONFIG] (MSC service thread 1-1) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2022-04-08 07:59:34,187 INFO  [org.infinispan.CONFIG] (MSC service thread 1-1) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2022-04-08 07:59:34,221 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 83) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.spi.marshalling.InfinispanProtoStreamMarshaller'
+2022-04-08 07:59:34,293 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 83) ISPN000025: wakeUpInterval is <= 0, not starting expired purge thread
+2022-04-08 07:59:34,308 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 83) WFLYCLINF0002: Started http-remoting-connector cache from ejb container
+2022-04-08 07:59:34,504 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "postgresql-42.3.1.jar" (runtime-name : "postgresql-42.3.1.jar")
+2022-04-08 07:59:34,505 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 46) WFLYSRV0010: Deployed "mysql-connector-java-8.0.27.jar" (runtime-name : "mysql-connector-java-8.0.27.jar")
+2022-04-08 07:59:34,643 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2022-04-08 07:59:34,646 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Preview 26.0.1.Final (WildFly Core 18.0.4.Final) started in 13702ms - Started 478 of 682 services (363 services are lazy, passive or on-demand)
+2022-04-08 07:59:34,649 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2022-04-08 07:59:34,650 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2022-04-08 07:59:35,333 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "KISSProject.war" (runtime-name: "KISSProject.war")
+2022-04-08 07:59:35,832 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-2) MSC000001: Failed to start service jboss.deployment.unit."KISSProject.war".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.unit."KISSProject.war".PARSE: WFLYSRV0153: Failed to process phase PARSE of deployment "KISSProject.war"
+	at org.jboss.as.server@18.0.4.Final//org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:189)
+	at org.jboss.msc@1.4.13.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1739)
+	at org.jboss.msc@1.4.13.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1701)
+	at org.jboss.msc@1.4.13.Final//org.jboss.msc.service.ServiceControllerImpl$ControllerTask.run(ServiceControllerImpl.java:1559)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.jboss.msc.service.ServiceNotFoundException: service jboss.ejb.default-resource-adapter-name-service not found
+	at org.jboss.msc@1.4.13.Final//org.jboss.msc.service.ServiceContainerImpl.getRequiredService(ServiceContainerImpl.java:674)
+	at org.jboss.as.ejb3@26.0.1.Final//org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.getDefaultResourceAdapterName(MessageDrivenComponentDescriptionFactory.java:244)
+	at org.jboss.as.ejb3@26.0.1.Final//org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.processMessageBeans(MessageDrivenComponentDescriptionFactory.java:137)
+	at org.jboss.as.ejb3@26.0.1.Final//org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.processAnnotations(MessageDrivenComponentDescriptionFactory.java:82)
+	at org.jboss.as.ejb3@26.0.1.Final//org.jboss.as.ejb3.deployment.processors.AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.processAnnotations(AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.java:145)
+	at org.jboss.as.ejb3@26.0.1.Final//org.jboss.as.ejb3.deployment.processors.AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.deploy(AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.java:82)
+	at org.jboss.as.server@18.0.4.Final//org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:182)
+	... 8 more
+
+2022-04-08 07:59:35,840 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 1) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "KISSProject.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"KISSProject.war\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of deployment \"KISSProject.war\"
+    Caused by: org.jboss.msc.service.ServiceNotFoundException: service jboss.ejb.default-resource-adapter-name-service not found"}}
+2022-04-08 07:59:35,844 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 1) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "KISSProject.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"KISSProject.war\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of deployment \"KISSProject.war\"
+    Caused by: org.jboss.msc.service.ServiceNotFoundException: service jboss.ejb.default-resource-adapter-name-service not found"}}
+2022-04-08 07:59:35,849 ERROR [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0021: Deploy of deployment "KISSProject.war" was rolled back with the following failure message: 
+{"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"KISSProject.war\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of deployment \"KISSProject.war\"
+    Caused by: org.jboss.msc.service.ServiceNotFoundException: service jboss.ejb.default-resource-adapter-name-service not found"}}
+2022-04-08 07:59:35,867 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment KISSProject.war (runtime-name: KISSProject.war) in 17ms
+2022-04-08 08:09:22,824 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0009: Content /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/07/1d391f880be27bc7ba842bd8d346598d507e24 is obsolete and will be removed
+2022-04-08 08:09:22,839 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0002: Content removed from location /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/07/1d391f880be27bc7ba842bd8d346598d507e24/content
+2022-04-08 08:09:22,839 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0009: Content /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/89/660d015bc1c700d832212a5855771f6a7c229e is obsolete and will be removed
+2022-04-08 08:09:22,841 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0002: Content removed from location /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/89/660d015bc1c700d832212a5855771f6a7c229e/content
+2022-04-08 08:09:22,841 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0009: Content /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/6e/2b8f924bd27f2275564de1de3ab975c2b83ad9 is obsolete and will be removed
+2022-04-08 08:09:22,842 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0002: Content removed from location /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/6e/2b8f924bd27f2275564de1de3ab975c2b83ad9/content
+2022-04-08 08:09:22,842 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0009: Content /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/fd/9c4351afb6bce1f02ac0ca9581dfe1db79d4c4 is obsolete and will be removed
+2022-04-08 08:09:22,843 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0002: Content removed from location /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/fd/9c4351afb6bce1f02ac0ca9581dfe1db79d4c4/content
+2022-04-08 08:09:22,843 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0009: Content /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/37/256176d0c5bbd9abc892b2786dcccc3f7ac9ea is obsolete and will be removed
+2022-04-08 08:09:22,843 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0002: Content removed from location /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/37/256176d0c5bbd9abc892b2786dcccc3f7ac9ea/content
+2022-04-08 08:09:22,843 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0009: Content /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/6f/d7c00ca5e69f55b3615194f6b21afc747fc2f3 is obsolete and will be removed
+2022-04-08 08:09:22,845 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0002: Content removed from location /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/6f/d7c00ca5e69f55b3615194f6b21afc747fc2f3/content
+2022-04-08 08:09:22,846 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0009: Content /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/56/d4315cb1f4f6123589662a0b970ddc08c6209e is obsolete and will be removed
+2022-04-08 08:09:22,847 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0002: Content removed from location /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/56/d4315cb1f4f6123589662a0b970ddc08c6209e/content
+2022-04-08 08:09:22,847 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0009: Content /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/cf/4073f2291c14bc17a4bee1aa7761caba0a521f is obsolete and will be removed
+2022-04-08 08:09:22,848 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0002: Content removed from location /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/cf/4073f2291c14bc17a4bee1aa7761caba0a521f/content
+2022-04-08 08:09:22,849 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0009: Content /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/6c/e9135461d2570a9ff92c6e5affef6a845f56ae is obsolete and will be removed
+2022-04-08 08:09:22,850 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0002: Content removed from location /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/6c/e9135461d2570a9ff92c6e5affef6a845f56ae/content
+2022-04-08 08:09:22,850 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0009: Content /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/41/bf54f94a29d84174468d4f36ad8e2f4cfceab8 is obsolete and will be removed
+2022-04-08 08:09:22,851 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0002: Content removed from location /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/41/bf54f94a29d84174468d4f36ad8e2f4cfceab8/content
+2022-04-08 08:09:22,852 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0009: Content /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/8d/82bbe93a3087265a47c0efd701b28081f0674a is obsolete and will be removed
+2022-04-08 08:09:22,853 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0002: Content removed from location /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/8d/82bbe93a3087265a47c0efd701b28081f0674a/content
+2022-04-08 08:09:22,854 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0009: Content /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/e6/b4ee4a3d8bb76a331c06a02e5c9d7cb27192a4 is obsolete and will be removed
+2022-04-08 08:09:22,854 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0002: Content removed from location /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/e6/b4ee4a3d8bb76a331c06a02e5c9d7cb27192a4/content
+2022-04-08 08:09:22,854 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0009: Content /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/c2/17b320e258ad7aa7d679b6c610cd6d46b95108 is obsolete and will be removed
+2022-04-08 08:09:22,855 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0002: Content removed from location /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/c2/17b320e258ad7aa7d679b6c610cd6d46b95108/content
+2022-04-08 08:09:22,855 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0009: Content /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/21/88b87c23a3ed2f97aeced16d123b533bd5c08d is obsolete and will be removed
+2022-04-08 08:09:22,855 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0002: Content removed from location /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/21/88b87c23a3ed2f97aeced16d123b533bd5c08d/content
+2022-04-08 08:09:22,856 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0009: Content /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/05/8509db8e880e962ba46da914a5e7546b8bcfa2 is obsolete and will be removed
+2022-04-08 08:09:22,857 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0002: Content removed from location /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/05/8509db8e880e962ba46da914a5e7546b8bcfa2/content
+2022-04-08 08:09:22,858 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0009: Content /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/9c/e667b678fddaeaf0699b239486d1d19a90527d is obsolete and will be removed
+2022-04-08 08:09:22,859 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0002: Content removed from location /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/9c/e667b678fddaeaf0699b239486d1d19a90527d/content
+2022-04-08 08:21:23,359 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0272: Suspending server
+2022-04-08 08:21:23,378 INFO  [org.jboss.as.ejb3] (management-handler-thread - 2) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2022-04-08 08:21:23,383 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2022-04-08 08:21:23,446 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0002: Unbound mail session [java:jboss/mail/TestMail]
+2022-04-08 08:21:23,459 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2022-04-08 08:21:23,461 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0019: Host default-host stopping
+2022-04-08 08:21:23,464 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-7) WFLYJCA0119: Unbinding connection factory named java:/JmsXA to alias java:jboss/DefaultJMSConnectionFactory
+2022-04-08 08:21:23,480 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:jboss/datasources/MySqlDS]
+2022-04-08 08:21:23,478 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/PostgresDS]
+2022-04-08 08:21:23,482 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-1) WFLYJCA0011: Unbound Jakarta Connectors ConnectionFactory [java:/JmsXA]
+2022-04-08 08:21:23,492 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-2) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2022-04-08 08:21:23,494 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2022-04-08 08:21:23,495 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = postgresql-42.3.1.jar
+2022-04-08 08:21:23,496 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = mysql-connector-java-8.0.27.jar
+2022-04-08 08:21:23,498 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2022-04-08 08:21:23,543 INFO  [org.apache.activemq.artemis.ra.ActiveMQRALogger] (ServerService Thread Pool -- 83) AMQ151003: resource adaptor stopped
+2022-04-08 08:21:23,545 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 89) WFLYCLINF0003: Stopped http-remoting-connector cache from ejb container
+2022-04-08 08:21:23,552 INFO  [org.infinispan.manager.DefaultCacheManager] (ServerService Thread Pool -- 89) Stopping cache manager null on null
+2022-04-08 08:21:23,583 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTPS listener https suspending
+2022-04-08 08:21:23,589 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2022-04-08 08:21:23,590 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment mysql-connector-java-8.0.27.jar (runtime-name: mysql-connector-java-8.0.27.jar) in 181ms
+2022-04-08 08:21:23,590 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment postgresql-42.3.1.jar (runtime-name: postgresql-42.3.1.jar) in 188ms
+2022-04-08 08:21:23,787 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 83) AMQ221002: Apache ActiveMQ Artemis Message Broker version 2.19.0 [4f129d40-b4ab-11ec-a013-f84d8979d84c] stopped, uptime 21 minutes
+2022-04-08 08:21:23,792 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTP listener default suspending
+2022-04-08 08:21:23,793 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2022-04-08 08:21:23,796 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0004: Undertow 2.2.14.Final stopping
+2022-04-08 08:21:23,801 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0050: WildFly Preview 26.0.1.Final (WildFly Core 18.0.4.Final) stopped in 406ms
+2022-04-08 08:21:29,823 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.0.Final
+2022-04-08 08:21:30,604 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.13.Final
+2022-04-08 08:21:30,611 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2022-04-08 08:21:30,705 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Preview 26.0.1.Final (WildFly Core 18.0.4.Final) starting
+2022-04-08 08:21:30,707 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	file.encoding = US-ASCII
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	java.awt.headless = true
+	java.class.path = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/jboss-modules.jar
+	java.class.version = 61.0
+	java.home = /Library/Java/JavaVirtualMachines/jdk-17.0.2.jdk/Contents/Home
+	java.io.tmpdir = /var/folders/m1/v1ygjssd255b_vtvd2yx4sxr0000gn/T/
+	java.library.path = /Users/sasavincic/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 17.0.2+8-LTS-86
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = https://java.oracle.com/
+	java.vendor.url.bug = https://bugreport.java.com/bugreport/
+	java.version = 17.0.2
+	java.version.date = 2022-01-18
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode, sharing
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 17.0.2+8-LTS-86
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final
+	jboss.host.name = sasas-macbook-pro
+	jboss.modules.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = sasas-macbook-pro
+	jboss.qualified.host.name = sasas-macbook-pro.local
+	jboss.server.base.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone
+	jboss.server.config.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration
+	jboss.server.data.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data
+	jboss.server.deploy.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content
+	jboss.server.log.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/log
+	jboss.server.name = sasas-macbook-pro
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration/logging.properties
+	module.path = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/modules
+	native.encoding = US-ASCII
+	org.jboss.boot.log.file = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = x86_64
+	os.name = Mac OS X
+	os.version = 12.3.1
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	sun.arch.data.model = 64
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk-17.0.2.jdk/Contents/Home/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/jboss-modules.jar -mp /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/modules org.jboss.as.standalone -Djboss.home.dir=/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final -Djboss.server.base.dir=/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	user.country = SI
+	user.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/bin
+	user.home = /Users/sasavincic
+	user.language = en
+	user.name = sasavincic
+	user.timezone = Europe/Ljubljana
+2022-04-08 08:21:30,708 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED -Dorg.jboss.boot.log.file=/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/log/server.log -Dlogging.configuration=file:/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration/logging.properties 
+2022-04-08 08:21:31,814 INFO  [org.wildfly.security] (ServerService Thread Pool -- 27) ELY00001: WildFly Elytron version 1.18.3.Final
+2022-04-08 08:21:38,581 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 35) WFLYDR0001: Content added at location /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/39/08facabfb2ac4d5460428ace8823ef2ad07bcf/content
+2022-04-08 08:21:38,653 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2022-04-08 08:21:38,679 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.8.5.Final
+2022-04-08 08:21:38,688 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.8.5.Final
+2022-04-08 08:21:38,823 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 66) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2022-04-08 08:21:38,821 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 76) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2022-04-08 08:21:38,828 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 57) WFLYRS0016: RESTEasy version 6.0.0.Beta1
+2022-04-08 08:21:38,840 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 78) WFLYWS0002: Activating WebServices Extension
+2022-04-08 08:21:38,842 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 55) WFLYCLINF0001: Activating Infinispan subsystem.
+2022-04-08 08:21:38,840 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 68) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2022-04-08 08:21:38,830 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 62) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2022-04-08 08:21:38,846 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 69) WFLYNAM0001: Activating Naming Subsystem
+2022-04-08 08:21:38,844 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 67) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2022-04-08 08:21:38,842 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 53) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2022-04-08 08:21:38,867 INFO  [org.jboss.remoting] (MSC service thread 1-8) JBoss Remoting version 5.0.23.Final
+2022-04-08 08:21:38,926 INFO  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 1.5.3.Final)
+2022-04-08 08:21:38,929 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 54) WFLYHEALTH0001: Activating Base Health Subsystem
+2022-04-08 08:21:38,946 INFO  [org.jboss.as.naming] (MSC service thread 1-4) WFLYNAM0003: Starting Naming Service
+2022-04-08 08:21:38,936 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 56) WFLYIO001: Worker 'default' has auto-configured to 20 IO threads with 160 max task threads based on your 10 available processors
+2022-04-08 08:21:38,985 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2022-04-08 08:21:38,984 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0001: Bound mail session [java:jboss/mail/TestMail]
+2022-04-08 08:21:39,030 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 65) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2022-04-08 08:21:39,130 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 2.2.14.Final starting
+2022-04-08 08:21:39,138 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 45) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2022-04-08 08:21:39,146 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = h2
+2022-04-08 08:21:39,338 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 40 (per class), which is derived from the number of CPUs on this host.
+2022-04-08 08:21:39,338 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 160 (per class), which is derived from thread worker pool sizing.
+2022-04-08 08:21:39,476 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 77) WFLYUT0014: Creating file handler for path '/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2022-04-08 08:21:39,545 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0012: Started server default-server.
+2022-04-08 08:21:39,564 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-1) WFLYELY00023: KeyStore file '/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration/application.keystore' does not exist. Used blank.
+2022-04-08 08:21:39,606 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) Queuing requests.
+2022-04-08 08:21:39,612 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0018: Host default-host starting
+2022-04-08 08:21:39,609 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-7) WFLYELY01084: KeyStore /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2022-04-08 08:21:39,715 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2022-04-08 08:21:39,864 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2022-04-08 08:21:40,032 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2022-04-08 08:21:40,091 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2022-04-08 08:21:40,305 INFO  [org.jboss.as.patching] (MSC service thread 1-3) WFLYPAT0050: WildFly Preview cumulative patch ID is: base, one-off patches include: none
+2022-04-08 08:21:40,337 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-6) WFLYMSGAMQ0001: AIO wasn't located on this platform, it will fall back to using pure Java NIO.
+2022-04-08 08:21:40,341 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/deployments
+2022-04-08 08:21:40,353 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "postgresql-42.3.1.jar" (runtime-name: "postgresql-42.3.1.jar")
+2022-04-08 08:21:40,353 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "mysql-connector-java-8.0.27.jar" (runtime-name: "mysql-connector-java-8.0.27.jar")
+2022-04-08 08:21:40,446 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 80) AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/activemq/journal,bindingsDirectory=/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/activemq/bindings,largeMessagesDirectory=/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/activemq/largemessages,pagingDirectory=/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/activemq/paging)
+2022-04-08 08:21:40,513 INFO  [org.jboss.ws.common.management] (MSC service thread 1-4) JBWS022052: Starting JBossWS 5.4.4.Final (Apache CXF 3.4.5) 
+2022-04-08 08:21:40,523 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 80) AMQ221013: Using NIO Journal
+2022-04-08 08:21:40,663 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 80) AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2022-04-08 08:21:40,667 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 80) AMQ221043: Protocol module found: [artemis-amqp-protocol]. Adding protocol support for: AMQP
+2022-04-08 08:21:40,668 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 80) AMQ221043: Protocol module found: [artemis-hornetq-protocol]. Adding protocol support for: HORNETQ
+2022-04-08 08:21:40,669 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 80) AMQ221043: Protocol module found: [artemis-stomp-protocol]. Adding protocol support for: STOMP
+2022-04-08 08:21:40,914 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 80) AMQ221034: Waiting indefinitely to obtain live lock
+2022-04-08 08:21:40,919 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 80) AMQ221035: Live Server Obtained live lock
+2022-04-08 08:21:41,317 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 80) AMQ221003: Deploying ANYCAST queue jms.queue.ExpiryQueue on address jms.queue.ExpiryQueue
+2022-04-08 08:21:41,328 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 80) AMQ221003: Deploying ANYCAST queue jms.queue.DLQ on address jms.queue.DLQ
+2022-04-08 08:21:41,329 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 80) AMQ221003: Deploying ANYCAST queue jms.queue.testQueue on address jms.queue.testQueue
+2022-04-08 08:21:41,358 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-6) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+2022-04-08 08:21:41,358 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-2) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+2022-04-08 08:21:41,359 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-1) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+2022-04-08 08:21:41,358 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-8) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+2022-04-08 08:21:41,886 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 80) AMQ221007: Server is now live
+2022-04-08 08:21:41,891 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 80) AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.19.0 [default, nodeID=4f129d40-b4ab-11ec-a013-f84d8979d84c] 
+2022-04-08 08:21:41,939 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 82) WFLYMSGAMQ0002: Bound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2022-04-08 08:21:41,950 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 81) WFLYMSGAMQ0002: Bound messaging object to jndi name java:/ConnectionFactory
+2022-04-08 08:21:41,958 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.3)
+2022-04-08 08:21:41,990 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.cj.jdbc.Driver (version 8.0)
+2022-04-08 08:21:42,008 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = postgresql-42.3.1.jar
+2022-04-08 08:21:42,021 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0018: Started Driver service with driver-name = mysql-connector-java-8.0.27.jar
+2022-04-08 08:21:42,023 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-5) WFLYJCA0007: Registered connection factory java:/JmsXA
+2022-04-08 08:21:42,029 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/PostgresDS]
+2022-04-08 08:21:42,039 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/MySqlDS]
+2022-04-08 08:21:42,109 INFO  [org.apache.activemq.artemis.ra.ActiveMQRALogger] (MSC service thread 1-5) AMQ151007: Resource adaptor started
+2022-04-08 08:21:42,115 INFO  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-5) IJ020002: Deployed: file://RaActivatoractivemq-ra
+2022-04-08 08:21:42,121 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-4) WFLYJCA0002: Bound Jakarta Connectors ConnectionFactory [java:/JmsXA]
+2022-04-08 08:21:42,121 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-8) WFLYJCA0118: Binding connection factory named java:/JmsXA to alias java:jboss/DefaultJMSConnectionFactory
+2022-04-08 08:21:42,425 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 83) ISPN000128: Infinispan version: Infinispan 'Taedonggang' 12.1.7.Final
+2022-04-08 08:21:42,478 INFO  [org.infinispan.CONFIG] (MSC service thread 1-1) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2022-04-08 08:21:42,479 INFO  [org.infinispan.CONFIG] (MSC service thread 1-1) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2022-04-08 08:21:42,514 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 83) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.spi.marshalling.InfinispanProtoStreamMarshaller'
+2022-04-08 08:21:42,568 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 83) ISPN000025: wakeUpInterval is <= 0, not starting expired purge thread
+2022-04-08 08:21:42,583 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 83) WFLYCLINF0002: Started http-remoting-connector cache from ejb container
+2022-04-08 08:21:42,783 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "postgresql-42.3.1.jar" (runtime-name : "postgresql-42.3.1.jar")
+2022-04-08 08:21:42,786 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 46) WFLYSRV0010: Deployed "mysql-connector-java-8.0.27.jar" (runtime-name : "mysql-connector-java-8.0.27.jar")
+2022-04-08 08:21:42,929 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2022-04-08 08:21:42,932 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Preview 26.0.1.Final (WildFly Core 18.0.4.Final) started in 13636ms - Started 478 of 682 services (363 services are lazy, passive or on-demand)
+2022-04-08 08:21:42,935 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2022-04-08 08:21:42,935 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2022-04-08 08:21:43,590 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "KISSProject.war" (runtime-name: "KISSProject.war")
+2022-04-08 08:21:44,060 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-1) MSC000001: Failed to start service jboss.deployment.unit."KISSProject.war".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.unit."KISSProject.war".PARSE: WFLYSRV0153: Failed to process phase PARSE of deployment "KISSProject.war"
+	at org.jboss.as.server@18.0.4.Final//org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:189)
+	at org.jboss.msc@1.4.13.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1739)
+	at org.jboss.msc@1.4.13.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1701)
+	at org.jboss.msc@1.4.13.Final//org.jboss.msc.service.ServiceControllerImpl$ControllerTask.run(ServiceControllerImpl.java:1559)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.jboss.msc.service.ServiceNotFoundException: service jboss.ejb.default-resource-adapter-name-service not found
+	at org.jboss.msc@1.4.13.Final//org.jboss.msc.service.ServiceContainerImpl.getRequiredService(ServiceContainerImpl.java:674)
+	at org.jboss.as.ejb3@26.0.1.Final//org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.getDefaultResourceAdapterName(MessageDrivenComponentDescriptionFactory.java:244)
+	at org.jboss.as.ejb3@26.0.1.Final//org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.processMessageBeans(MessageDrivenComponentDescriptionFactory.java:137)
+	at org.jboss.as.ejb3@26.0.1.Final//org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.processAnnotations(MessageDrivenComponentDescriptionFactory.java:82)
+	at org.jboss.as.ejb3@26.0.1.Final//org.jboss.as.ejb3.deployment.processors.AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.processAnnotations(AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.java:145)
+	at org.jboss.as.ejb3@26.0.1.Final//org.jboss.as.ejb3.deployment.processors.AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.deploy(AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.java:82)
+	at org.jboss.as.server@18.0.4.Final//org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:182)
+	... 8 more
+
+2022-04-08 08:21:44,066 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 1) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "KISSProject.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"KISSProject.war\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of deployment \"KISSProject.war\"
+    Caused by: org.jboss.msc.service.ServiceNotFoundException: service jboss.ejb.default-resource-adapter-name-service not found"}}
+2022-04-08 08:21:44,069 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 1) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "KISSProject.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"KISSProject.war\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of deployment \"KISSProject.war\"
+    Caused by: org.jboss.msc.service.ServiceNotFoundException: service jboss.ejb.default-resource-adapter-name-service not found"}}
+2022-04-08 08:21:44,073 ERROR [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0021: Deploy of deployment "KISSProject.war" was rolled back with the following failure message: 
+{"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"KISSProject.war\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of deployment \"KISSProject.war\"
+    Caused by: org.jboss.msc.service.ServiceNotFoundException: service jboss.ejb.default-resource-adapter-name-service not found"}}
+2022-04-08 08:21:44,097 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment KISSProject.war (runtime-name: KISSProject.war) in 22ms
+2022-04-08 08:23:09,943 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0272: Suspending server
+2022-04-08 08:23:09,945 INFO  [org.jboss.as.ejb3] (management-handler-thread - 1) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2022-04-08 08:23:09,952 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2022-04-08 08:23:10,000 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0002: Unbound mail session [java:jboss/mail/TestMail]
+2022-04-08 08:23:10,010 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2022-04-08 08:23:10,012 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-2) WFLYJCA0119: Unbinding connection factory named java:/JmsXA to alias java:jboss/DefaultJMSConnectionFactory
+2022-04-08 08:23:10,036 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0019: Host default-host stopping
+2022-04-08 08:23:10,036 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/PostgresDS]
+2022-04-08 08:23:10,037 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/MySqlDS]
+2022-04-08 08:23:10,046 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-1) WFLYJCA0011: Unbound Jakarta Connectors ConnectionFactory [java:/JmsXA]
+2022-04-08 08:23:10,046 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-6) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2022-04-08 08:23:10,054 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2022-04-08 08:23:10,055 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0019: Stopped Driver service with driver-name = postgresql-42.3.1.jar
+2022-04-08 08:23:10,056 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = mysql-connector-java-8.0.27.jar
+2022-04-08 08:23:10,059 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2022-04-08 08:23:10,086 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 83) WFLYCLINF0003: Stopped http-remoting-connector cache from ejb container
+2022-04-08 08:23:10,098 INFO  [org.apache.activemq.artemis.ra.ActiveMQRALogger] (ServerService Thread Pool -- 90) AMQ151003: resource adaptor stopped
+2022-04-08 08:23:10,094 INFO  [org.infinispan.manager.DefaultCacheManager] (ServerService Thread Pool -- 83) Stopping cache manager null on null
+2022-04-08 08:23:10,115 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTPS listener https suspending
+2022-04-08 08:23:10,126 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2022-04-08 08:23:10,147 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment mysql-connector-java-8.0.27.jar (runtime-name: mysql-connector-java-8.0.27.jar) in 177ms
+2022-04-08 08:23:10,147 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment postgresql-42.3.1.jar (runtime-name: postgresql-42.3.1.jar) in 178ms
+2022-04-08 08:23:10,380 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 83) AMQ221002: Apache ActiveMQ Artemis Message Broker version 2.19.0 [4f129d40-b4ab-11ec-a013-f84d8979d84c] stopped, uptime 1 minute
+2022-04-08 08:23:10,390 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTP listener default suspending
+2022-04-08 08:23:10,394 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2022-04-08 08:23:10,395 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0004: Undertow 2.2.14.Final stopping
+2022-04-08 08:23:10,417 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0050: WildFly Preview 26.0.1.Final (WildFly Core 18.0.4.Final) stopped in 455ms
+2022-04-08 08:24:58,018 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.0.Final
+2022-04-08 08:24:58,839 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.13.Final
+2022-04-08 08:24:58,845 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2022-04-08 08:24:58,940 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Preview 26.0.1.Final (WildFly Core 18.0.4.Final) starting
+2022-04-08 08:24:58,943 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	file.encoding = US-ASCII
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	java.awt.headless = true
+	java.class.path = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/jboss-modules.jar
+	java.class.version = 61.0
+	java.home = /Library/Java/JavaVirtualMachines/jdk-17.0.2.jdk/Contents/Home
+	java.io.tmpdir = /var/folders/m1/v1ygjssd255b_vtvd2yx4sxr0000gn/T/
+	java.library.path = /Users/sasavincic/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 17.0.2+8-LTS-86
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = https://java.oracle.com/
+	java.vendor.url.bug = https://bugreport.java.com/bugreport/
+	java.version = 17.0.2
+	java.version.date = 2022-01-18
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode, sharing
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 17.0.2+8-LTS-86
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final
+	jboss.host.name = sasas-macbook-pro
+	jboss.modules.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = sasas-macbook-pro
+	jboss.qualified.host.name = sasas-macbook-pro.local
+	jboss.server.base.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone
+	jboss.server.config.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration
+	jboss.server.data.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data
+	jboss.server.deploy.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content
+	jboss.server.log.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/log
+	jboss.server.name = sasas-macbook-pro
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration/logging.properties
+	module.path = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/modules
+	native.encoding = US-ASCII
+	org.jboss.boot.log.file = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = x86_64
+	os.name = Mac OS X
+	os.version = 12.3.1
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	sun.arch.data.model = 64
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk-17.0.2.jdk/Contents/Home/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/jboss-modules.jar -mp /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/modules org.jboss.as.standalone -Djboss.home.dir=/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final -Djboss.server.base.dir=/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	user.country = SI
+	user.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/bin
+	user.home = /Users/sasavincic
+	user.language = en
+	user.name = sasavincic
+	user.timezone = Europe/Ljubljana
+2022-04-08 08:24:58,945 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED -Dorg.jboss.boot.log.file=/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/log/server.log -Dlogging.configuration=file:/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration/logging.properties 
+2022-04-08 08:25:00,087 INFO  [org.wildfly.security] (ServerService Thread Pool -- 27) ELY00001: WildFly Elytron version 1.18.3.Final
+2022-04-08 08:25:06,734 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 9) WFLYDR0001: Content added at location /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/45/351507c033d764aa267311acd4eb50791eece9/content
+2022-04-08 08:25:06,814 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2022-04-08 08:25:06,842 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.8.5.Final
+2022-04-08 08:25:06,852 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.8.5.Final
+2022-04-08 08:25:06,908 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 65) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2022-04-08 08:25:06,909 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 52) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2022-04-08 08:25:06,910 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 56) WFLYRS0016: RESTEasy version 6.0.0.Beta1
+2022-04-08 08:25:06,940 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 66) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2022-04-08 08:25:06,939 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 64) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2022-04-08 08:25:06,939 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 54) WFLYCLINF0001: Activating Infinispan subsystem.
+2022-04-08 08:25:06,941 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 61) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2022-04-08 08:25:06,942 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2022-04-08 08:25:06,942 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 67) WFLYNAM0001: Activating Naming Subsystem
+2022-04-08 08:25:06,993 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2022-04-08 08:25:07,001 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 55) WFLYIO001: Worker 'default' has auto-configured to 20 IO threads with 160 max task threads based on your 10 available processors
+2022-04-08 08:25:07,032 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 53) WFLYHEALTH0001: Activating Base Health Subsystem
+2022-04-08 08:25:07,059 INFO  [org.jboss.as.connector] (MSC service thread 1-8) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 1.5.3.Final)
+2022-04-08 08:25:07,065 INFO  [org.jboss.remoting] (MSC service thread 1-3) JBoss Remoting version 5.0.23.Final
+2022-04-08 08:25:07,083 INFO  [org.jboss.as.naming] (MSC service thread 1-8) WFLYNAM0003: Starting Naming Service
+2022-04-08 08:25:07,111 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2022-04-08 08:25:07,126 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 63) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2022-04-08 08:25:07,203 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2022-04-08 08:25:07,229 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = h2
+2022-04-08 08:25:07,228 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0003: Undertow 2.2.14.Final starting
+2022-04-08 08:25:07,315 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 160 (per class), which is derived from thread worker pool sizing.
+2022-04-08 08:25:07,315 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 40 (per class), which is derived from the number of CPUs on this host.
+2022-04-08 08:25:07,407 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path '/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2022-04-08 08:25:07,431 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0012: Started server default-server.
+2022-04-08 08:25:07,451 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) Queuing requests.
+2022-04-08 08:25:07,470 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0018: Host default-host starting
+2022-04-08 08:25:07,551 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2022-04-08 08:25:07,623 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-2) WFLYELY00023: KeyStore file '/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration/application.keystore' does not exist. Used blank.
+2022-04-08 08:25:07,634 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-3) WFLYELY01084: KeyStore /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2022-04-08 08:25:07,812 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2022-04-08 08:25:08,003 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2022-04-08 08:25:08,075 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2022-04-08 08:25:08,165 INFO  [org.jboss.as.patching] (MSC service thread 1-3) WFLYPAT0050: WildFly Preview cumulative patch ID is: base, one-off patches include: none
+2022-04-08 08:25:08,188 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/deployments
+2022-04-08 08:25:08,192 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "KISSProject.war" (runtime-name: "KISSProject.war")
+2022-04-08 08:25:08,192 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "postgresql-42.3.1.jar" (runtime-name: "postgresql-42.3.1.jar")
+2022-04-08 08:25:08,193 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "mysql-connector-java-8.0.27.jar" (runtime-name: "mysql-connector-java-8.0.27.jar")
+2022-04-08 08:25:08,347 INFO  [org.jboss.ws.common.management] (MSC service thread 1-6) JBWS022052: Starting JBossWS 5.4.4.Final (Apache CXF 3.4.5) 
+2022-04-08 08:25:09,628 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-2) MSC000001: Failed to start service jboss.deployment.unit."KISSProject.war".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.unit."KISSProject.war".PARSE: WFLYSRV0153: Failed to process phase PARSE of deployment "KISSProject.war"
+	at org.jboss.as.server@18.0.4.Final//org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:189)
+	at org.jboss.msc@1.4.13.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1739)
+	at org.jboss.msc@1.4.13.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1701)
+	at org.jboss.msc@1.4.13.Final//org.jboss.msc.service.ServiceControllerImpl$ControllerTask.run(ServiceControllerImpl.java:1559)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.jboss.msc.service.ServiceNotFoundException: service jboss.ejb.default-resource-adapter-name-service not found
+	at org.jboss.msc@1.4.13.Final//org.jboss.msc.service.ServiceContainerImpl.getRequiredService(ServiceContainerImpl.java:674)
+	at org.jboss.as.ejb3@26.0.1.Final//org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.getDefaultResourceAdapterName(MessageDrivenComponentDescriptionFactory.java:244)
+	at org.jboss.as.ejb3@26.0.1.Final//org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.processMessageBeans(MessageDrivenComponentDescriptionFactory.java:137)
+	at org.jboss.as.ejb3@26.0.1.Final//org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.processAnnotations(MessageDrivenComponentDescriptionFactory.java:82)
+	at org.jboss.as.ejb3@26.0.1.Final//org.jboss.as.ejb3.deployment.processors.AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.processAnnotations(AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.java:145)
+	at org.jboss.as.ejb3@26.0.1.Final//org.jboss.as.ejb3.deployment.processors.AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.deploy(AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.java:82)
+	at org.jboss.as.server@18.0.4.Final//org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:182)
+	... 8 more
+
+2022-04-08 08:25:09,868 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.3)
+2022-04-08 08:25:09,877 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.cj.jdbc.Driver (version 8.0)
+2022-04-08 08:25:09,921 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = mysql-connector-java-8.0.27.jar
+2022-04-08 08:25:09,942 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = postgresql-42.3.1.jar
+2022-04-08 08:25:09,954 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/datasources/PostgresDS]
+2022-04-08 08:25:09,960 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/MySqlDS]
+2022-04-08 08:25:10,176 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 79) ISPN000128: Infinispan version: Infinispan 'Taedonggang' 12.1.7.Final
+2022-04-08 08:25:10,227 INFO  [org.infinispan.CONFIG] (MSC service thread 1-1) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2022-04-08 08:25:10,228 INFO  [org.infinispan.CONFIG] (MSC service thread 1-1) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2022-04-08 08:25:10,258 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 79) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.spi.marshalling.InfinispanProtoStreamMarshaller'
+2022-04-08 08:25:10,333 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 79) ISPN000025: wakeUpInterval is <= 0, not starting expired purge thread
+2022-04-08 08:25:10,355 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 79) WFLYCLINF0002: Started http-remoting-connector cache from ejb container
+2022-04-08 08:25:10,537 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("add") failed - address: ([("deployment" => "KISSProject.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"KISSProject.war\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of deployment \"KISSProject.war\"
+    Caused by: org.jboss.msc.service.ServiceNotFoundException: service jboss.ejb.default-resource-adapter-name-service not found"}}
+2022-04-08 08:25:10,552 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "KISSProject.war" (runtime-name : "KISSProject.war")
+2022-04-08 08:25:10,553 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "postgresql-42.3.1.jar" (runtime-name : "postgresql-42.3.1.jar")
+2022-04-08 08:25:10,554 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "mysql-connector-java-8.0.27.jar" (runtime-name : "mysql-connector-java-8.0.27.jar")
+2022-04-08 08:25:10,558 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."KISSProject.war".PARSE: WFLYSRV0153: Failed to process phase PARSE of deployment "KISSProject.war"
+
+2022-04-08 08:25:10,669 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2022-04-08 08:25:10,671 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: WildFly Preview 26.0.1.Final (WildFly Core 18.0.4.Final) started (with errors) in 13334ms - Started 451 of 656 services (1 services failed or missing dependencies, 345 services are lazy, passive or on-demand)
+2022-04-08 08:25:10,674 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2022-04-08 08:25:10,674 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2022-04-08 08:25:11,247 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment KISSProject.war (runtime-name: KISSProject.war) in 19ms
+2022-04-08 08:25:11,306 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "KISSProject.war" (runtime-name: "KISSProject.war")
+2022-04-08 08:25:11,481 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "KISSProject.war" (runtime-name: "KISSProject.war")
+2022-04-08 08:25:11,808 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-3) MSC000001: Failed to start service jboss.deployment.unit."KISSProject.war".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.unit."KISSProject.war".PARSE: WFLYSRV0153: Failed to process phase PARSE of deployment "KISSProject.war"
+	at org.jboss.as.server@18.0.4.Final//org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:189)
+	at org.jboss.msc@1.4.13.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1739)
+	at org.jboss.msc@1.4.13.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1701)
+	at org.jboss.msc@1.4.13.Final//org.jboss.msc.service.ServiceControllerImpl$ControllerTask.run(ServiceControllerImpl.java:1559)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.jboss.msc.service.ServiceNotFoundException: service jboss.ejb.default-resource-adapter-name-service not found
+	at org.jboss.msc@1.4.13.Final//org.jboss.msc.service.ServiceContainerImpl.getRequiredService(ServiceContainerImpl.java:674)
+	at org.jboss.as.ejb3@26.0.1.Final//org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.getDefaultResourceAdapterName(MessageDrivenComponentDescriptionFactory.java:244)
+	at org.jboss.as.ejb3@26.0.1.Final//org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.processMessageBeans(MessageDrivenComponentDescriptionFactory.java:137)
+	at org.jboss.as.ejb3@26.0.1.Final//org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.processAnnotations(MessageDrivenComponentDescriptionFactory.java:82)
+	at org.jboss.as.ejb3@26.0.1.Final//org.jboss.as.ejb3.deployment.processors.AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.processAnnotations(AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.java:145)
+	at org.jboss.as.ejb3@26.0.1.Final//org.jboss.as.ejb3.deployment.processors.AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.deploy(AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.java:82)
+	at org.jboss.as.server@18.0.4.Final//org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:182)
+	... 8 more
+
+2022-04-08 08:25:11,811 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 1) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "KISSProject.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"KISSProject.war\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of deployment \"KISSProject.war\"
+    Caused by: org.jboss.msc.service.ServiceNotFoundException: service jboss.ejb.default-resource-adapter-name-service not found"}}
+2022-04-08 08:25:11,814 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 1) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "KISSProject.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"KISSProject.war\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of deployment \"KISSProject.war\"
+    Caused by: org.jboss.msc.service.ServiceNotFoundException: service jboss.ejb.default-resource-adapter-name-service not found"}}
+2022-04-08 08:25:11,817 ERROR [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0021: Deploy of deployment "KISSProject.war" was rolled back with the following failure message: 
+{"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"KISSProject.war\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of deployment \"KISSProject.war\"
+    Caused by: org.jboss.msc.service.ServiceNotFoundException: service jboss.ejb.default-resource-adapter-name-service not found"}}
+2022-04-08 08:25:11,848 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment KISSProject.war (runtime-name: KISSProject.war) in 31ms
+2022-04-08 08:34:59,292 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0009: Content /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/39/08facabfb2ac4d5460428ace8823ef2ad07bcf is obsolete and will be removed
+2022-04-08 08:34:59,302 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0002: Content removed from location /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/39/08facabfb2ac4d5460428ace8823ef2ad07bcf/content
+2022-04-08 08:34:59,302 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0009: Content /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/a1/a40a852190ee139198e8ff45e9eeb222a3dcad is obsolete and will be removed
+2022-04-08 08:34:59,303 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0002: Content removed from location /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/a1/a40a852190ee139198e8ff45e9eeb222a3dcad/content
+2022-04-08 08:46:34,266 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0272: Suspending server
+2022-04-08 08:46:34,284 INFO  [org.jboss.as.ejb3] (management-handler-thread - 2) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2022-04-08 08:46:34,289 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2022-04-08 08:46:34,366 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2022-04-08 08:46:34,384 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/PostgresDS]
+2022-04-08 08:46:34,385 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/MySqlDS]
+2022-04-08 08:46:34,385 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0019: Host default-host stopping
+2022-04-08 08:46:34,399 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2022-04-08 08:46:34,402 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = mysql-connector-java-8.0.27.jar
+2022-04-08 08:46:34,403 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2022-04-08 08:46:34,403 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = postgresql-42.3.1.jar
+2022-04-08 08:46:34,431 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 79) WFLYCLINF0003: Stopped http-remoting-connector cache from ejb container
+2022-04-08 08:46:34,434 INFO  [org.infinispan.manager.DefaultCacheManager] (ServerService Thread Pool -- 79) Stopping cache manager null on null
+2022-04-08 08:46:34,466 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTPS listener https suspending
+2022-04-08 08:46:34,466 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTP listener default suspending
+2022-04-08 08:46:34,468 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment mysql-connector-java-8.0.27.jar (runtime-name: mysql-connector-java-8.0.27.jar) in 155ms
+2022-04-08 08:46:34,470 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2022-04-08 08:46:34,467 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment postgresql-42.3.1.jar (runtime-name: postgresql-42.3.1.jar) in 146ms
+2022-04-08 08:46:34,470 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2022-04-08 08:46:34,473 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0004: Undertow 2.2.14.Final stopping
+2022-04-08 08:46:34,485 INFO  [org.jboss.as] (MSC service thread 1-4) WFLYSRV0050: WildFly Preview 26.0.1.Final (WildFly Core 18.0.4.Final) stopped in 179ms
+2022-04-08 09:04:10,057 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.0.Final
+2022-04-08 09:04:10,888 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.13.Final
+2022-04-08 09:04:10,895 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2022-04-08 09:04:10,992 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Preview 26.0.1.Final (WildFly Core 18.0.4.Final) starting
+2022-04-08 09:04:10,993 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	file.encoding = US-ASCII
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	java.awt.headless = true
+	java.class.path = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/jboss-modules.jar
+	java.class.version = 61.0
+	java.home = /Library/Java/JavaVirtualMachines/jdk-17.0.2.jdk/Contents/Home
+	java.io.tmpdir = /var/folders/m1/v1ygjssd255b_vtvd2yx4sxr0000gn/T/
+	java.library.path = /Users/sasavincic/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 17.0.2+8-LTS-86
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = https://java.oracle.com/
+	java.vendor.url.bug = https://bugreport.java.com/bugreport/
+	java.version = 17.0.2
+	java.version.date = 2022-01-18
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode, sharing
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 17.0.2+8-LTS-86
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final
+	jboss.host.name = sasas-macbook-pro
+	jboss.modules.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = sasas-macbook-pro
+	jboss.qualified.host.name = sasas-macbook-pro.local
+	jboss.server.base.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone
+	jboss.server.config.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration
+	jboss.server.data.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data
+	jboss.server.deploy.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content
+	jboss.server.log.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/log
+	jboss.server.name = sasas-macbook-pro
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration/logging.properties
+	module.path = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/modules
+	native.encoding = US-ASCII
+	org.jboss.boot.log.file = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = x86_64
+	os.name = Mac OS X
+	os.version = 12.3.1
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	sun.arch.data.model = 64
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk-17.0.2.jdk/Contents/Home/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/jboss-modules.jar -mp /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/modules org.jboss.as.standalone -Djboss.home.dir=/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final -Djboss.server.base.dir=/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	user.country = SI
+	user.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/bin
+	user.home = /Users/sasavincic
+	user.language = en
+	user.name = sasavincic
+	user.timezone = Europe/Ljubljana
+2022-04-08 09:04:10,995 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED -Dorg.jboss.boot.log.file=/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/log/server.log -Dlogging.configuration=file:/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration/logging.properties 
+2022-04-08 09:04:12,216 INFO  [org.wildfly.security] (ServerService Thread Pool -- 27) ELY00001: WildFly Elytron version 1.18.3.Final
+2022-04-08 09:04:18,991 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 21) WFLYDR0001: Content added at location /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/82/39be3c729b04473cd885b6f7c60f4a2fff1d0d/content
+2022-04-08 09:04:19,067 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2022-04-08 09:04:19,094 INFO  [org.xnio] (MSC service thread 1-6) XNIO version 3.8.5.Final
+2022-04-08 09:04:19,104 INFO  [org.xnio.nio] (MSC service thread 1-6) XNIO NIO Implementation Version 3.8.5.Final
+2022-04-08 09:04:19,166 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 65) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2022-04-08 09:04:19,165 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 54) WFLYCLINF0001: Activating Infinispan subsystem.
+2022-04-08 09:04:19,165 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 52) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2022-04-08 09:04:19,244 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 64) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2022-04-08 09:04:19,190 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 56) WFLYRS0016: RESTEasy version 6.0.0.Beta1
+2022-04-08 09:04:19,242 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 66) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2022-04-08 09:04:19,189 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 61) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2022-04-08 09:04:19,244 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 67) WFLYNAM0001: Activating Naming Subsystem
+2022-04-08 09:04:19,244 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2022-04-08 09:04:19,242 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2022-04-08 09:04:19,266 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 55) WFLYIO001: Worker 'default' has auto-configured to 20 IO threads with 160 max task threads based on your 10 available processors
+2022-04-08 09:04:19,335 INFO  [org.jboss.as.connector] (MSC service thread 1-6) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 1.5.3.Final)
+2022-04-08 09:04:19,332 INFO  [org.jboss.remoting] (MSC service thread 1-1) JBoss Remoting version 5.0.23.Final
+2022-04-08 09:04:19,392 INFO  [org.jboss.as.naming] (MSC service thread 1-2) WFLYNAM0003: Starting Naming Service
+2022-04-08 09:04:19,419 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 53) WFLYHEALTH0001: Activating Base Health Subsystem
+2022-04-08 09:04:19,416 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2022-04-08 09:04:19,425 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 63) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2022-04-08 09:04:19,497 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2022-04-08 09:04:19,514 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0003: Undertow 2.2.14.Final starting
+2022-04-08 09:04:19,547 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = h2
+2022-04-08 09:04:19,600 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 160 (per class), which is derived from thread worker pool sizing.
+2022-04-08 09:04:19,601 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 40 (per class), which is derived from the number of CPUs on this host.
+2022-04-08 09:04:19,834 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path '/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2022-04-08 09:04:19,856 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0012: Started server default-server.
+2022-04-08 09:04:19,896 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) Queuing requests.
+2022-04-08 09:04:19,911 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0018: Host default-host starting
+2022-04-08 09:04:19,936 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-6) WFLYELY00023: KeyStore file '/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration/application.keystore' does not exist. Used blank.
+2022-04-08 09:04:19,955 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-5) WFLYELY01084: KeyStore /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2022-04-08 09:04:19,999 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2022-04-08 09:04:20,143 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2022-04-08 09:04:20,312 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2022-04-08 09:04:20,340 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2022-04-08 09:04:20,465 INFO  [org.jboss.as.patching] (MSC service thread 1-2) WFLYPAT0050: WildFly Preview cumulative patch ID is: base, one-off patches include: none
+2022-04-08 09:04:20,473 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/deployments
+2022-04-08 09:04:20,480 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "mysql-connector-java-8.0.27.jar" (runtime-name: "mysql-connector-java-8.0.27.jar")
+2022-04-08 09:04:20,480 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "postgresql-42.3.1.jar" (runtime-name: "postgresql-42.3.1.jar")
+2022-04-08 09:04:20,600 INFO  [org.jboss.ws.common.management] (MSC service thread 1-4) JBWS022052: Starting JBossWS 5.4.4.Final (Apache CXF 3.4.5) 
+2022-04-08 09:04:21,744 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.3)
+2022-04-08 09:04:21,748 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.cj.jdbc.Driver (version 8.0)
+2022-04-08 09:04:21,782 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = postgresql-42.3.1.jar
+2022-04-08 09:04:21,805 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = mysql-connector-java-8.0.27.jar
+2022-04-08 09:04:21,814 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Bound data source [java:jboss/datasources/PostgresDS]
+2022-04-08 09:04:21,817 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/MySqlDS]
+2022-04-08 09:04:22,180 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 79) ISPN000128: Infinispan version: Infinispan 'Taedonggang' 12.1.7.Final
+2022-04-08 09:04:22,238 INFO  [org.infinispan.CONFIG] (MSC service thread 1-4) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2022-04-08 09:04:22,239 INFO  [org.infinispan.CONFIG] (MSC service thread 1-4) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2022-04-08 09:04:22,274 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 79) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.spi.marshalling.InfinispanProtoStreamMarshaller'
+2022-04-08 09:04:22,338 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 79) ISPN000025: wakeUpInterval is <= 0, not starting expired purge thread
+2022-04-08 09:04:22,360 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 79) WFLYCLINF0002: Started http-remoting-connector cache from ejb container
+2022-04-08 09:04:22,554 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "postgresql-42.3.1.jar" (runtime-name : "postgresql-42.3.1.jar")
+2022-04-08 09:04:22,557 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "mysql-connector-java-8.0.27.jar" (runtime-name : "mysql-connector-java-8.0.27.jar")
+2022-04-08 09:04:22,681 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2022-04-08 09:04:22,684 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Preview 26.0.1.Final (WildFly Core 18.0.4.Final) started in 13168ms - Started 448 of 652 services (345 services are lazy, passive or on-demand)
+2022-04-08 09:04:22,687 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2022-04-08 09:04:22,687 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2022-04-08 09:04:23,370 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "KISSProject.war" (runtime-name: "KISSProject.war")
+2022-04-08 09:04:24,173 INFO  [org.jboss.as.jpa] (MSC service thread 1-5) WFLYJPA0002: Read persistence.xml for osebe_demo
+2022-04-08 09:04:24,283 INFO  [org.jipijapa] (MSC service thread 1-6) JIPIORMV53020253: Second level cache enabled for KISSProject.war#osebe_demo
+2022-04-08 09:04:24,373 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0003: Processing weld deployment KISSProject.war
+2022-04-08 09:04:24,385 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 79) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'KISSProject.war#osebe_demo'
+2022-04-08 09:04:24,406 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 79) HHH000204: Processing PersistenceUnitInfo [
+	name: osebe_demo
+	...]
+2022-04-08 09:04:24,486 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 79) HHH000412: Hibernate Core {5.3.24.Final}
+2022-04-08 09:04:24,488 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 79) HHH000206: hibernate.properties not found
+2022-04-08 09:04:24,538 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-6) HV000001: Hibernate Validator 7.0.1.Final
+2022-04-08 09:04:24,664 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 79) HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+2022-04-08 09:04:24,726 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'TipVinjetePostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:app/KISSProject/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:module/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:global/KISSProject/TipVinjetePostgresDao
+	java:app/KISSProject/TipVinjetePostgresDao
+	java:module/TipVinjetePostgresDao
+
+2022-04-08 09:04:24,727 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'NakupPostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:app/KISSProject/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:module/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:global/KISSProject/NakupPostgresDao
+	java:app/KISSProject/NakupPostgresDao
+	java:module/NakupPostgresDao
+
+2022-04-08 09:04:24,728 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'ProdajalecPostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:app/KISSProject/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:module/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:global/KISSProject/ProdajalecPostgresDao
+	java:app/KISSProject/ProdajalecPostgresDao
+	java:module/ProdajalecPostgresDao
+
+2022-04-08 09:04:24,739 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'KontrolorRemoteBean' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/KontrolorRemoteBean!si.um.feri.aiv.dao.KontrolorRemote
+	java:app/KISSProject/KontrolorRemoteBean!si.um.feri.aiv.dao.KontrolorRemote
+	java:module/KontrolorRemoteBean!si.um.feri.aiv.dao.KontrolorRemote
+	java:jboss/exported/KISSProject/KontrolorRemoteBean!si.um.feri.aiv.dao.KontrolorRemote
+	ejb:/KISSProject/KontrolorRemoteBean!si.um.feri.aiv.dao.KontrolorRemote
+	java:global/KISSProject/KontrolorRemoteBean
+	java:app/KISSProject/KontrolorRemoteBean
+	java:module/KontrolorRemoteBean
+
+2022-04-08 09:04:25,100 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-6) No shutdown hook registered: Please call close() manually on application shutdown.
+2022-04-08 09:04:25,106 INFO  [org.wildfly.microprofile.opentracing.smallrye] (MSC service thread 1-6) WFLYTRAC0001: Tracer initialized: JaegerTracer(version=Java-1.6.0, serviceName=KISSProject.war, reporter=RemoteReporter(sender=org.wildfly.extension.microprofile.opentracing.spi.sender.WildFlySender@745a64a5, closeEnqueueTimeout=1000), sampler=ConstSampler(decision=true, tags={sampler.type=const, sampler.param=true}), tags={hostname=Sasas-MacBook-Pro.local, jaeger.version=Java-1.6.0, ip=127.0.0.1}, zipkinSharedRpcSpan=false, expandExceptionLogs=false, useTraceId128Bit=false)
+2022-04-08 09:04:25,257 INFO  [org.jipijapa] (MSC service thread 1-2) JIPIORMV53020253: Second level cache enabled for KISSProject.war#osebe_demo
+2022-04-08 09:04:25,442 INFO  [org.jboss.weld.Version] (MSC service thread 1-2) WELD-000900: 4.0.2 (Final)
+2022-04-08 09:04:25,677 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 79) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'KISSProject.war#osebe_demo'
+2022-04-08 09:04:25,859 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 79) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-04-08 09:04:26,038 INFO  [org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl] (ServerService Thread Pool -- 79) HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2022-04-08 09:04:26,059 INFO  [org.hibernate.type.BasicTypeRegistry] (ServerService Thread Pool -- 79) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@74e87609
+2022-04-08 09:04:26,082 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 79) Envers integration enabled? : true
+2022-04-08 09:04:26,759 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-1) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2022-04-08 09:04:28,077 INFO  [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 32) Initializing Mojarra 3.0.0.SP04 for context '/KISSProject'
+2022-04-08 09:04:29,058 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 32) Running on PrimeFaces 11.0.0
+2022-04-08 09:04:29,563 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 32) RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class si.um.feri.aiv.resource.RestActivator$Proxy$_$$_WeldClientProxy
+2022-04-08 09:04:29,652 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0021: Registered web context: '/KISSProject' for server 'default-server'
+2022-04-08 09:04:29,760 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "KISSProject.war" (runtime-name : "KISSProject.war")
+2022-04-08 09:04:44,551 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0022: Unregistered web context: '/KISSProject' from server 'default-server'
+2022-04-08 09:04:44,639 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 37) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'KISSProject.war#osebe_demo'
+2022-04-08 09:04:44,642 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 37) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@60eed5e3
+2022-04-08 09:04:44,651 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 37) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'KISSProject.war#osebe_demo'
+2022-04-08 09:04:44,687 INFO  [org.infinispan.manager.DefaultCacheManager] (ServerService Thread Pool -- 37) Stopping cache manager null on null
+2022-04-08 09:04:44,715 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment KISSProject.war (runtime-name: KISSProject.war) in 187ms
+2022-04-08 09:04:44,769 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "KISSProject.war" (runtime-name: "KISSProject.war")
+2022-04-08 09:04:44,964 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0272: Suspending server
+2022-04-08 09:04:45,018 INFO  [org.jboss.as.ejb3] (management-handler-thread - 1) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2022-04-08 09:04:45,022 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2022-04-08 09:04:45,081 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2022-04-08 09:04:45,082 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/MySqlDS]
+2022-04-08 09:04:45,082 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0019: Host default-host stopping
+2022-04-08 09:04:45,085 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/PostgresDS]
+2022-04-08 09:04:45,090 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = mysql-connector-java-8.0.27.jar
+2022-04-08 09:04:45,088 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2022-04-08 09:04:45,087 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2022-04-08 09:04:45,106 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = postgresql-42.3.1.jar
+2022-04-08 09:04:45,135 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTPS listener https suspending
+2022-04-08 09:04:45,135 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTP listener default suspending
+2022-04-08 09:04:45,137 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment mysql-connector-java-8.0.27.jar (runtime-name: mysql-connector-java-8.0.27.jar) in 85ms
+2022-04-08 09:04:45,140 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 26) WFLYCLINF0003: Stopped http-remoting-connector cache from ejb container
+2022-04-08 09:04:45,135 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment postgresql-42.3.1.jar (runtime-name: postgresql-42.3.1.jar) in 84ms
+2022-04-08 09:04:45,148 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2022-04-08 09:04:45,148 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2022-04-08 09:04:45,151 INFO  [org.infinispan.manager.DefaultCacheManager] (ServerService Thread Pool -- 26) Stopping cache manager null on null
+2022-04-08 09:04:45,152 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0004: Undertow 2.2.14.Final stopping
+2022-04-08 09:04:45,164 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0050: WildFly Preview 26.0.1.Final (WildFly Core 18.0.4.Final) stopped in 118ms
+2022-04-08 09:07:06,575 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.0.Final
+2022-04-08 09:07:07,412 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.13.Final
+2022-04-08 09:07:07,417 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2022-04-08 09:07:07,510 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Preview 26.0.1.Final (WildFly Core 18.0.4.Final) starting
+2022-04-08 09:07:07,512 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	file.encoding = US-ASCII
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	java.awt.headless = true
+	java.class.path = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/jboss-modules.jar
+	java.class.version = 61.0
+	java.home = /Library/Java/JavaVirtualMachines/jdk-17.0.2.jdk/Contents/Home
+	java.io.tmpdir = /var/folders/m1/v1ygjssd255b_vtvd2yx4sxr0000gn/T/
+	java.library.path = /Users/sasavincic/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 17.0.2+8-LTS-86
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = https://java.oracle.com/
+	java.vendor.url.bug = https://bugreport.java.com/bugreport/
+	java.version = 17.0.2
+	java.version.date = 2022-01-18
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode, sharing
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 17.0.2+8-LTS-86
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final
+	jboss.host.name = sasas-macbook-pro
+	jboss.modules.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = sasas-macbook-pro
+	jboss.qualified.host.name = sasas-macbook-pro.local
+	jboss.server.base.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone
+	jboss.server.config.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration
+	jboss.server.data.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data
+	jboss.server.deploy.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content
+	jboss.server.log.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/log
+	jboss.server.name = sasas-macbook-pro
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration/logging.properties
+	module.path = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/modules
+	native.encoding = US-ASCII
+	org.jboss.boot.log.file = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = x86_64
+	os.name = Mac OS X
+	os.version = 12.3.1
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	sun.arch.data.model = 64
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk-17.0.2.jdk/Contents/Home/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/jboss-modules.jar -mp /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/modules org.jboss.as.standalone -Djboss.home.dir=/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final -Djboss.server.base.dir=/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	user.country = SI
+	user.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/bin
+	user.home = /Users/sasavincic
+	user.language = en
+	user.name = sasavincic
+	user.timezone = Europe/Ljubljana
+2022-04-08 09:07:07,515 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED -Dorg.jboss.boot.log.file=/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/log/server.log -Dlogging.configuration=file:/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration/logging.properties 
+2022-04-08 09:07:08,566 INFO  [org.wildfly.security] (ServerService Thread Pool -- 27) ELY00001: WildFly Elytron version 1.18.3.Final
+2022-04-08 09:07:15,192 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 18) WFLYDR0001: Content added at location /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/9a/160a2980696f05eeeea39a01b747803a8dfb31/content
+2022-04-08 09:07:15,262 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2022-04-08 09:07:15,287 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.8.5.Final
+2022-04-08 09:07:15,298 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.8.5.Final
+2022-04-08 09:07:15,361 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 52) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2022-04-08 09:07:15,361 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 65) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2022-04-08 09:07:15,362 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 64) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2022-04-08 09:07:15,373 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2022-04-08 09:07:15,424 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 54) WFLYCLINF0001: Activating Infinispan subsystem.
+2022-04-08 09:07:15,424 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 67) WFLYNAM0001: Activating Naming Subsystem
+2022-04-08 09:07:15,426 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 66) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2022-04-08 09:07:15,426 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 53) WFLYHEALTH0001: Activating Base Health Subsystem
+2022-04-08 09:07:15,427 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2022-04-08 09:07:15,426 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 56) WFLYRS0016: RESTEasy version 6.0.0.Beta1
+2022-04-08 09:07:15,412 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 61) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2022-04-08 09:07:15,550 INFO  [org.jboss.as.connector] (MSC service thread 1-3) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 1.5.3.Final)
+2022-04-08 09:07:15,573 INFO  [org.jboss.as.naming] (MSC service thread 1-5) WFLYNAM0003: Starting Naming Service
+2022-04-08 09:07:15,585 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 63) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2022-04-08 09:07:15,580 INFO  [org.jboss.remoting] (MSC service thread 1-8) JBoss Remoting version 5.0.23.Final
+2022-04-08 09:07:15,646 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 55) WFLYIO001: Worker 'default' has auto-configured to 20 IO threads with 160 max task threads based on your 10 available processors
+2022-04-08 09:07:15,669 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2022-04-08 09:07:15,675 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0003: Undertow 2.2.14.Final starting
+2022-04-08 09:07:15,755 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2022-04-08 09:07:15,799 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = h2
+2022-04-08 09:07:15,829 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 40 (per class), which is derived from the number of CPUs on this host.
+2022-04-08 09:07:15,829 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 160 (per class), which is derived from thread worker pool sizing.
+2022-04-08 09:07:15,928 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path '/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2022-04-08 09:07:15,967 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0012: Started server default-server.
+2022-04-08 09:07:15,980 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) Queuing requests.
+2022-04-08 09:07:15,994 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0018: Host default-host starting
+2022-04-08 09:07:16,083 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-4) WFLYELY00023: KeyStore file '/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration/application.keystore' does not exist. Used blank.
+2022-04-08 09:07:16,099 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-8) WFLYELY01084: KeyStore /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2022-04-08 09:07:16,135 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2022-04-08 09:07:16,330 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2022-04-08 09:07:16,531 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2022-04-08 09:07:16,550 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2022-04-08 09:07:16,703 INFO  [org.jboss.as.patching] (MSC service thread 1-7) WFLYPAT0050: WildFly Preview cumulative patch ID is: base, one-off patches include: none
+2022-04-08 09:07:16,726 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/deployments
+2022-04-08 09:07:16,732 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "postgresql-42.3.1.jar" (runtime-name: "postgresql-42.3.1.jar")
+2022-04-08 09:07:16,732 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "mysql-connector-java-8.0.27.jar" (runtime-name: "mysql-connector-java-8.0.27.jar")
+2022-04-08 09:07:16,842 INFO  [org.jboss.ws.common.management] (MSC service thread 1-8) JBWS022052: Starting JBossWS 5.4.4.Final (Apache CXF 3.4.5) 
+2022-04-08 09:07:17,976 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.3)
+2022-04-08 09:07:17,981 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.cj.jdbc.Driver (version 8.0)
+2022-04-08 09:07:18,021 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = mysql-connector-java-8.0.27.jar
+2022-04-08 09:07:18,023 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = postgresql-42.3.1.jar
+2022-04-08 09:07:18,048 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/PostgresDS]
+2022-04-08 09:07:18,049 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/MySqlDS]
+2022-04-08 09:07:18,440 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 78) ISPN000128: Infinispan version: Infinispan 'Taedonggang' 12.1.7.Final
+2022-04-08 09:07:18,488 INFO  [org.infinispan.CONFIG] (MSC service thread 1-8) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2022-04-08 09:07:18,491 INFO  [org.infinispan.CONFIG] (MSC service thread 1-8) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2022-04-08 09:07:18,528 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 78) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.spi.marshalling.InfinispanProtoStreamMarshaller'
+2022-04-08 09:07:18,585 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 78) ISPN000025: wakeUpInterval is <= 0, not starting expired purge thread
+2022-04-08 09:07:18,601 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started http-remoting-connector cache from ejb container
+2022-04-08 09:07:18,762 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "postgresql-42.3.1.jar" (runtime-name : "postgresql-42.3.1.jar")
+2022-04-08 09:07:18,764 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "mysql-connector-java-8.0.27.jar" (runtime-name : "mysql-connector-java-8.0.27.jar")
+2022-04-08 09:07:18,886 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2022-04-08 09:07:18,889 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Preview 26.0.1.Final (WildFly Core 18.0.4.Final) started in 12854ms - Started 448 of 652 services (345 services are lazy, passive or on-demand)
+2022-04-08 09:07:18,892 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2022-04-08 09:07:18,893 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2022-04-08 09:07:19,287 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "KISSProject.war" (runtime-name: "KISSProject.war")
+2022-04-08 09:07:20,059 INFO  [org.jboss.as.jpa] (MSC service thread 1-3) WFLYJPA0002: Read persistence.xml for osebe_demo
+2022-04-08 09:07:20,161 INFO  [org.jipijapa] (MSC service thread 1-3) JIPIORMV53020253: Second level cache enabled for KISSProject.war#osebe_demo
+2022-04-08 09:07:20,271 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0003: Processing weld deployment KISSProject.war
+2022-04-08 09:07:20,281 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'KISSProject.war#osebe_demo'
+2022-04-08 09:07:20,302 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 78) HHH000204: Processing PersistenceUnitInfo [
+	name: osebe_demo
+	...]
+2022-04-08 09:07:20,367 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 78) HHH000412: Hibernate Core {5.3.24.Final}
+2022-04-08 09:07:20,369 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 78) HHH000206: hibernate.properties not found
+2022-04-08 09:07:20,444 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-6) HV000001: Hibernate Validator 7.0.1.Final
+2022-04-08 09:07:20,640 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 78) HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+2022-04-08 09:07:20,687 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'TipVinjetePostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:app/KISSProject/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:module/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:global/KISSProject/TipVinjetePostgresDao
+	java:app/KISSProject/TipVinjetePostgresDao
+	java:module/TipVinjetePostgresDao
+
+2022-04-08 09:07:20,689 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'NakupPostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:app/KISSProject/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:module/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:global/KISSProject/NakupPostgresDao
+	java:app/KISSProject/NakupPostgresDao
+	java:module/NakupPostgresDao
+
+2022-04-08 09:07:20,690 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'ProdajalecPostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:app/KISSProject/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:module/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:global/KISSProject/ProdajalecPostgresDao
+	java:app/KISSProject/ProdajalecPostgresDao
+	java:module/ProdajalecPostgresDao
+
+2022-04-08 09:07:20,708 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'KontrolorRemoteBean' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/KontrolorRemoteBean!si.um.feri.aiv.dao.KontrolorRemote
+	java:app/KISSProject/KontrolorRemoteBean!si.um.feri.aiv.dao.KontrolorRemote
+	java:module/KontrolorRemoteBean!si.um.feri.aiv.dao.KontrolorRemote
+	java:jboss/exported/KISSProject/KontrolorRemoteBean!si.um.feri.aiv.dao.KontrolorRemote
+	ejb:/KISSProject/KontrolorRemoteBean!si.um.feri.aiv.dao.KontrolorRemote
+	java:global/KISSProject/KontrolorRemoteBean
+	java:app/KISSProject/KontrolorRemoteBean
+	java:module/KontrolorRemoteBean
+
+2022-04-08 09:07:21,022 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-6) No shutdown hook registered: Please call close() manually on application shutdown.
+2022-04-08 09:07:21,026 INFO  [org.wildfly.microprofile.opentracing.smallrye] (MSC service thread 1-6) WFLYTRAC0001: Tracer initialized: JaegerTracer(version=Java-1.6.0, serviceName=KISSProject.war, reporter=RemoteReporter(sender=org.wildfly.extension.microprofile.opentracing.spi.sender.WildFlySender@1a2b8f0f, closeEnqueueTimeout=1000), sampler=ConstSampler(decision=true, tags={sampler.type=const, sampler.param=true}), tags={hostname=Sasas-MacBook-Pro.local, jaeger.version=Java-1.6.0, ip=164.8.162.129}, zipkinSharedRpcSpan=false, expandExceptionLogs=false, useTraceId128Bit=false)
+2022-04-08 09:07:21,166 INFO  [org.jipijapa] (MSC service thread 1-8) JIPIORMV53020253: Second level cache enabled for KISSProject.war#osebe_demo
+2022-04-08 09:07:21,347 INFO  [org.jboss.weld.Version] (MSC service thread 1-8) WELD-000900: 4.0.2 (Final)
+2022-04-08 09:07:21,564 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'KISSProject.war#osebe_demo'
+2022-04-08 09:07:21,740 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 78) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-04-08 09:07:21,836 INFO  [org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl] (ServerService Thread Pool -- 78) HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2022-04-08 09:07:21,840 INFO  [org.hibernate.type.BasicTypeRegistry] (ServerService Thread Pool -- 78) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1dc3d305
+2022-04-08 09:07:21,847 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 78) Envers integration enabled? : true
+2022-04-08 09:07:22,600 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-3) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2022-04-08 09:07:23,779 INFO  [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 37) Initializing Mojarra 3.0.0.SP04 for context '/KISSProject'
+2022-04-08 09:07:24,801 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 37) Running on PrimeFaces 11.0.0
+2022-04-08 09:07:25,209 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 37) RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class si.um.feri.aiv.resource.RestActivator
+2022-04-08 09:07:25,266 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 37) WFLYUT0021: Registered web context: '/KISSProject' for server 'default-server'
+2022-04-08 09:07:25,370 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "KISSProject.war" (runtime-name : "KISSProject.war")
+2022-04-08 09:07:44,179 INFO  [class si.um.feri.aiv.resource.NakupResource] (default task-1) GET: /nakup
+2022-04-08 09:07:44,204 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-1) DAO: Returning All - Nakup
+2022-04-08 09:07:44,255 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (default task-1) HHH000397: Using ASTQueryTranslatorFactory
+2022-04-08 09:07:44,305 INFO  [stdout] (default task-1) Hibernate: select nakup0_.id as id1_0_, nakup0_.datumNakupa as datumNak2_0_, nakup0_.datumZacetkaVeljavnosti as datumZac3_0_, nakup0_.prodajalec_id as prodajal6_0_, nakup0_.registrskaOznakaVozila as registrs4_0_, nakup0_.tipVinjete_id as tipVinje7_0_, nakup0_.tipVozila as tipVozil5_0_ from Nakup nakup0_
+2022-04-08 09:07:44,337 INFO  [stdout] (default task-1) Hibernate: select prodajalec0_.id as id1_1_0_, prodajalec0_.naziv as naziv2_1_0_, prodajalec0_.steviloProdanihVinjet as steviloP3_1_0_ from Prodajalec prodajalec0_ where prodajalec0_.id=?
+2022-04-08 09:07:44,356 INFO  [stdout] (default task-1) Hibernate: select tipvinjete0_.id as id1_2_0_, tipvinjete0_.naziv as naziv2_2_0_, tipvinjete0_.tipVozila as tipVozil3_2_0_, tipvinjete0_.veljavnostVinjete as veljavno4_2_0_ from TipVinjete tipvinjete0_ where tipvinjete0_.id=?
+2022-04-08 09:07:44,358 INFO  [stdout] (default task-1) Hibernate: select prodajalec0_.id as id1_1_0_, prodajalec0_.naziv as naziv2_1_0_, prodajalec0_.steviloProdanihVinjet as steviloP3_1_0_ from Prodajalec prodajalec0_ where prodajalec0_.id=?
+2022-04-08 09:07:50,993 INFO  [class si.um.feri.aiv.resource.NakupResource] (default task-1) GET: /nakup/6
+2022-04-08 09:07:50,994 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-1) DAO: Finding - Nakup 6
+2022-04-08 09:07:50,995 INFO  [stdout] (default task-1) Hibernate: select nakup0_.id as id1_0_0_, nakup0_.datumNakupa as datumNak2_0_0_, nakup0_.datumZacetkaVeljavnosti as datumZac3_0_0_, nakup0_.prodajalec_id as prodajal6_0_0_, nakup0_.registrskaOznakaVozila as registrs4_0_0_, nakup0_.tipVinjete_id as tipVinje7_0_0_, nakup0_.tipVozila as tipVozil5_0_0_, prodajalec1_.id as id1_1_1_, prodajalec1_.naziv as naziv2_1_1_, prodajalec1_.steviloProdanihVinjet as steviloP3_1_1_, tipvinjete2_.id as id1_2_2_, tipvinjete2_.naziv as naziv2_2_2_, tipvinjete2_.tipVozila as tipVozil3_2_2_, tipvinjete2_.veljavnostVinjete as veljavno4_2_2_ from Nakup nakup0_ left outer join Prodajalec prodajalec1_ on nakup0_.prodajalec_id=prodajalec1_.id left outer join TipVinjete tipvinjete2_ on nakup0_.tipVinjete_id=tipvinjete2_.id where nakup0_.id=?
+2022-04-08 09:07:54,575 INFO  [class si.um.feri.aiv.resource.NakupResource] (default task-1) GET: /nakup/6
+2022-04-08 09:07:54,578 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-1) DAO: Finding - Nakup 6
+2022-04-08 09:07:54,581 INFO  [stdout] (default task-1) Hibernate: select nakup0_.id as id1_0_0_, nakup0_.datumNakupa as datumNak2_0_0_, nakup0_.datumZacetkaVeljavnosti as datumZac3_0_0_, nakup0_.prodajalec_id as prodajal6_0_0_, nakup0_.registrskaOznakaVozila as registrs4_0_0_, nakup0_.tipVinjete_id as tipVinje7_0_0_, nakup0_.tipVozila as tipVozil5_0_0_, prodajalec1_.id as id1_1_1_, prodajalec1_.naziv as naziv2_1_1_, prodajalec1_.steviloProdanihVinjet as steviloP3_1_1_, tipvinjete2_.id as id1_2_2_, tipvinjete2_.naziv as naziv2_2_2_, tipvinjete2_.tipVozila as tipVozil3_2_2_, tipvinjete2_.veljavnostVinjete as veljavno4_2_2_ from Nakup nakup0_ left outer join Prodajalec prodajalec1_ on nakup0_.prodajalec_id=prodajalec1_.id left outer join TipVinjete tipvinjete2_ on nakup0_.tipVinjete_id=tipvinjete2_.id where nakup0_.id=?
+2022-04-08 09:07:54,893 INFO  [class si.um.feri.aiv.resource.NakupResource] (default task-1) GET: /nakup/
+2022-04-08 09:07:54,894 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-1) DAO: Returning All - Nakup
+2022-04-08 09:07:54,899 INFO  [stdout] (default task-1) Hibernate: select nakup0_.id as id1_0_, nakup0_.datumNakupa as datumNak2_0_, nakup0_.datumZacetkaVeljavnosti as datumZac3_0_, nakup0_.prodajalec_id as prodajal6_0_, nakup0_.registrskaOznakaVozila as registrs4_0_, nakup0_.tipVinjete_id as tipVinje7_0_, nakup0_.tipVozila as tipVozil5_0_ from Nakup nakup0_
+2022-04-08 09:07:54,911 INFO  [stdout] (default task-1) Hibernate: select prodajalec0_.id as id1_1_0_, prodajalec0_.naziv as naziv2_1_0_, prodajalec0_.steviloProdanihVinjet as steviloP3_1_0_ from Prodajalec prodajalec0_ where prodajalec0_.id=?
+2022-04-08 09:07:54,919 INFO  [stdout] (default task-1) Hibernate: select tipvinjete0_.id as id1_2_0_, tipvinjete0_.naziv as naziv2_2_0_, tipvinjete0_.tipVozila as tipVozil3_2_0_, tipvinjete0_.veljavnostVinjete as veljavno4_2_0_ from TipVinjete tipvinjete0_ where tipvinjete0_.id=?
+2022-04-08 09:07:54,922 INFO  [stdout] (default task-1) Hibernate: select prodajalec0_.id as id1_1_0_, prodajalec0_.naziv as naziv2_1_0_, prodajalec0_.steviloProdanihVinjet as steviloP3_1_0_ from Prodajalec prodajalec0_ where prodajalec0_.id=?
+2022-04-08 09:08:02,415 INFO  [class si.um.feri.aiv.resource.NakupResource] (default task-1) GET: /nakup/9
+2022-04-08 09:08:02,418 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-1) DAO: Finding - Nakup 9
+2022-04-08 09:08:02,418 INFO  [stdout] (default task-1) Hibernate: select nakup0_.id as id1_0_0_, nakup0_.datumNakupa as datumNak2_0_0_, nakup0_.datumZacetkaVeljavnosti as datumZac3_0_0_, nakup0_.prodajalec_id as prodajal6_0_0_, nakup0_.registrskaOznakaVozila as registrs4_0_0_, nakup0_.tipVinjete_id as tipVinje7_0_0_, nakup0_.tipVozila as tipVozil5_0_0_, prodajalec1_.id as id1_1_1_, prodajalec1_.naziv as naziv2_1_1_, prodajalec1_.steviloProdanihVinjet as steviloP3_1_1_, tipvinjete2_.id as id1_2_2_, tipvinjete2_.naziv as naziv2_2_2_, tipvinjete2_.tipVozila as tipVozil3_2_2_, tipvinjete2_.veljavnostVinjete as veljavno4_2_2_ from Nakup nakup0_ left outer join Prodajalec prodajalec1_ on nakup0_.prodajalec_id=prodajalec1_.id left outer join TipVinjete tipvinjete2_ on nakup0_.tipVinjete_id=tipvinjete2_.id where nakup0_.id=?
+2022-04-08 09:17:07,860 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0009: Content /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/45/351507c033d764aa267311acd4eb50791eece9 is obsolete and will be removed
+2022-04-08 09:17:07,886 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0002: Content removed from location /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/45/351507c033d764aa267311acd4eb50791eece9/content
+2022-04-08 09:17:07,886 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0009: Content /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/82/39be3c729b04473cd885b6f7c60f4a2fff1d0d is obsolete and will be removed
+2022-04-08 09:17:07,888 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0002: Content removed from location /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/82/39be3c729b04473cd885b6f7c60f4a2fff1d0d/content
+2022-04-08 16:46:22,885 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 37) WFLYUT0022: Unregistered web context: '/KISSProject' from server 'default-server'
+2022-04-08 16:46:22,900 WARNING [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 37) Unexpected state during contextDestroyed: no ConfigManager instance in current ServletContext but one is expected to exist.
+2022-04-08 16:46:22,929 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 37) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'KISSProject.war#osebe_demo'
+2022-04-08 16:46:22,938 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 37) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@2a9c68bc
+2022-04-08 16:46:22,942 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 37) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'KISSProject.war#osebe_demo'
+2022-04-08 16:46:22,979 INFO  [org.infinispan.manager.DefaultCacheManager] (ServerService Thread Pool -- 37) Stopping cache manager null on null
+2022-04-08 16:46:23,016 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment KISSProject.war (runtime-name: KISSProject.war) in 162ms
+2022-04-08 16:46:23,075 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0009: Undeployed "KISSProject.war" (runtime-name: "KISSProject.war")
+2022-04-08 16:46:23,232 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0272: Suspending server
+2022-04-08 16:46:23,237 INFO  [org.jboss.as.ejb3] (management-handler-thread - 2) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2022-04-08 16:46:23,244 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2022-04-08 16:46:23,284 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:jboss/datasources/PostgresDS]
+2022-04-08 16:46:23,285 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0019: Host default-host stopping
+2022-04-08 16:46:23,285 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:jboss/datasources/MySqlDS]
+2022-04-08 16:46:23,284 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2022-04-08 16:46:23,292 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2022-04-08 16:46:23,293 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = postgresql-42.3.1.jar
+2022-04-08 16:46:23,293 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = mysql-connector-java-8.0.27.jar
+2022-04-08 16:46:23,294 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2022-04-08 16:46:23,329 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 37) WFLYCLINF0003: Stopped http-remoting-connector cache from ejb container
+2022-04-08 16:46:23,334 INFO  [org.infinispan.manager.DefaultCacheManager] (ServerService Thread Pool -- 37) Stopping cache manager null on null
+2022-04-08 16:46:23,344 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment mysql-connector-java-8.0.27.jar (runtime-name: mysql-connector-java-8.0.27.jar) in 83ms
+2022-04-08 16:46:23,345 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment postgresql-42.3.1.jar (runtime-name: postgresql-42.3.1.jar) in 83ms
+2022-04-08 16:46:23,346 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTPS listener https suspending
+2022-04-08 16:46:23,346 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTP listener default suspending
+2022-04-08 16:46:23,347 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2022-04-08 16:46:23,349 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2022-04-08 16:46:23,351 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0004: Undertow 2.2.14.Final stopping
+2022-04-08 16:46:23,361 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0050: WildFly Preview 26.0.1.Final (WildFly Core 18.0.4.Final) stopped in 103ms

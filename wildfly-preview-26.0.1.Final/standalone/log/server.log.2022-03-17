@@ -1,0 +1,1105 @@
+2022-03-17 16:10:31,188 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.0.Final
+2022-03-17 16:10:32,067 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.13.Final
+2022-03-17 16:10:32,077 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2022-03-17 16:10:32,182 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: WildFly Preview 26.0.1.Final (WildFly Core 18.0.4.Final) starting
+2022-03-17 16:10:32,184 DEBUG [org.jboss.as.config] (MSC service thread 1-1) Configured system properties:
+	[Standalone] = 
+	file.encoding = US-ASCII
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	java.awt.headless = true
+	java.class.path = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/jboss-modules.jar
+	java.class.version = 61.0
+	java.home = /Library/Java/JavaVirtualMachines/jdk-17.0.2.jdk/Contents/Home
+	java.io.tmpdir = /var/folders/m1/v1ygjssd255b_vtvd2yx4sxr0000gn/T/
+	java.library.path = /Users/sasavincic/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 17.0.2+8-LTS-86
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = https://java.oracle.com/
+	java.vendor.url.bug = https://bugreport.java.com/bugreport/
+	java.version = 17.0.2
+	java.version.date = 2022-01-18
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode, sharing
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 17.0.2+8-LTS-86
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final
+	jboss.host.name = sasas-mbp
+	jboss.modules.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = sasas-mbp
+	jboss.qualified.host.name = sasas-mbp.localdomain
+	jboss.server.base.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone
+	jboss.server.config.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration
+	jboss.server.data.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data
+	jboss.server.deploy.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content
+	jboss.server.log.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/log
+	jboss.server.name = sasas-mbp
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration/logging.properties
+	module.path = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/modules
+	native.encoding = US-ASCII
+	org.jboss.boot.log.file = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = x86_64
+	os.name = Mac OS X
+	os.version = 12.2.1
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	sun.arch.data.model = 64
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk-17.0.2.jdk/Contents/Home/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/jboss-modules.jar -mp /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/modules org.jboss.as.standalone -Djboss.home.dir=/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final -Djboss.server.base.dir=/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	user.country = SI
+	user.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/bin
+	user.home = /Users/sasavincic
+	user.language = en
+	user.name = sasavincic
+	user.timezone = Europe/Ljubljana
+2022-03-17 16:10:32,187 DEBUG [org.jboss.as.config] (MSC service thread 1-1) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED -Dorg.jboss.boot.log.file=/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/log/server.log -Dlogging.configuration=file:/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration/logging.properties 
+2022-03-17 16:10:33,318 INFO  [org.wildfly.security] (ServerService Thread Pool -- 27) ELY00001: WildFly Elytron version 1.18.3.Final
+2022-03-17 16:10:40,226 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 23) WFLYDR0001: Content added at location /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/37/bb1c9d8f325a716b1effbae9cac38969f3ed50/content
+2022-03-17 16:10:40,320 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2022-03-17 16:10:40,350 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.8.5.Final
+2022-03-17 16:10:40,363 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.8.5.Final
+2022-03-17 16:10:40,425 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 52) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2022-03-17 16:10:40,436 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 54) WFLYCLINF0001: Activating Infinispan subsystem.
+2022-03-17 16:10:40,449 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 56) WFLYRS0016: RESTEasy version 6.0.0.Beta1
+2022-03-17 16:10:40,448 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 61) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2022-03-17 16:10:40,464 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 65) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2022-03-17 16:10:40,464 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 66) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2022-03-17 16:10:40,464 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 53) WFLYHEALTH0001: Activating Base Health Subsystem
+2022-03-17 16:10:40,465 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 64) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2022-03-17 16:10:40,470 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2022-03-17 16:10:40,464 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 67) WFLYNAM0001: Activating Naming Subsystem
+2022-03-17 16:10:40,477 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2022-03-17 16:10:40,500 INFO  [org.jboss.remoting] (MSC service thread 1-6) JBoss Remoting version 5.0.23.Final
+2022-03-17 16:10:40,529 INFO  [org.jboss.as.connector] (MSC service thread 1-5) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 1.5.3.Final)
+2022-03-17 16:10:40,527 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 55) WFLYIO001: Worker 'default' has auto-configured to 20 IO threads with 160 max task threads based on your 10 available processors
+2022-03-17 16:10:40,647 INFO  [org.jboss.as.naming] (MSC service thread 1-7) WFLYNAM0003: Starting Naming Service
+2022-03-17 16:10:40,670 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 63) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2022-03-17 16:10:40,763 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2022-03-17 16:10:40,773 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0003: Undertow 2.2.14.Final starting
+2022-03-17 16:10:40,786 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2022-03-17 16:10:40,805 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = h2
+2022-03-17 16:10:40,885 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 40 (per class), which is derived from the number of CPUs on this host.
+2022-03-17 16:10:40,886 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 160 (per class), which is derived from thread worker pool sizing.
+2022-03-17 16:10:40,950 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path '/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2022-03-17 16:10:40,965 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0012: Started server default-server.
+2022-03-17 16:10:40,978 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) Queuing requests.
+2022-03-17 16:10:40,994 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0018: Host default-host starting
+2022-03-17 16:10:41,103 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2022-03-17 16:10:41,135 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-1) WFLYELY00023: KeyStore file '/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration/application.keystore' does not exist. Used blank.
+2022-03-17 16:10:41,144 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-8) WFLYELY01084: KeyStore /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2022-03-17 16:10:41,373 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2022-03-17 16:10:41,553 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2022-03-17 16:10:41,603 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2022-03-17 16:10:41,726 INFO  [org.jboss.as.patching] (MSC service thread 1-8) WFLYPAT0050: WildFly Preview cumulative patch ID is: base, one-off patches include: none
+2022-03-17 16:10:41,760 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/deployments
+2022-03-17 16:10:41,767 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "mysql-connector-java-8.0.27.jar" (runtime-name: "mysql-connector-java-8.0.27.jar")
+2022-03-17 16:10:41,768 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "KISSProject.war" (runtime-name: "KISSProject.war")
+2022-03-17 16:10:41,769 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "postgresql-42.3.1.jar" (runtime-name: "postgresql-42.3.1.jar")
+2022-03-17 16:10:41,922 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBossWS 5.4.4.Final (Apache CXF 3.4.5) 
+2022-03-17 16:10:43,431 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.3)
+2022-03-17 16:10:43,444 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.cj.jdbc.Driver (version 8.0)
+2022-03-17 16:10:43,497 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = postgresql-42.3.1.jar
+2022-03-17 16:10:43,503 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = mysql-connector-java-8.0.27.jar
+2022-03-17 16:10:43,520 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/PostgresDS]
+2022-03-17 16:10:43,521 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Bound data source [java:jboss/datasources/MySqlDS]
+2022-03-17 16:10:43,693 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0003: Processing weld deployment KISSProject.war
+2022-03-17 16:10:43,845 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-6) HV000001: Hibernate Validator 7.0.1.Final
+2022-03-17 16:10:43,895 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 78) ISPN000128: Infinispan version: Infinispan 'Taedonggang' 12.1.7.Final
+2022-03-17 16:10:43,964 INFO  [org.infinispan.CONFIG] (MSC service thread 1-1) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2022-03-17 16:10:43,965 INFO  [org.infinispan.CONFIG] (MSC service thread 1-1) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2022-03-17 16:10:43,997 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'TipVinjetePostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:app/KISSProject/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:module/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:global/KISSProject/TipVinjetePostgresDao
+	java:app/KISSProject/TipVinjetePostgresDao
+	java:module/TipVinjetePostgresDao
+
+2022-03-17 16:10:43,999 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'NakupPostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:app/KISSProject/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:module/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:global/KISSProject/NakupPostgresDao
+	java:app/KISSProject/NakupPostgresDao
+	java:module/NakupPostgresDao
+
+2022-03-17 16:10:43,999 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'ProdajalecPostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:app/KISSProject/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:module/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:global/KISSProject/ProdajalecPostgresDao
+	java:app/KISSProject/ProdajalecPostgresDao
+	java:module/ProdajalecPostgresDao
+
+2022-03-17 16:10:44,023 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 78) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.spi.marshalling.InfinispanProtoStreamMarshaller'
+2022-03-17 16:10:44,132 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 78) ISPN000025: wakeUpInterval is <= 0, not starting expired purge thread
+2022-03-17 16:10:44,163 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started http-remoting-connector cache from ejb container
+2022-03-17 16:10:44,170 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-6) No shutdown hook registered: Please call close() manually on application shutdown.
+2022-03-17 16:10:44,171 INFO  [org.wildfly.microprofile.opentracing.smallrye] (MSC service thread 1-6) WFLYTRAC0001: Tracer initialized: JaegerTracer(version=Java-1.6.0, serviceName=KISSProject.war, reporter=RemoteReporter(sender=org.wildfly.extension.microprofile.opentracing.spi.sender.WildFlySender@22018541, closeEnqueueTimeout=1000), sampler=ConstSampler(decision=true, tags={sampler.type=const, sampler.param=true}), tags={hostname=Sasas-MBP.localdomain, jaeger.version=Java-1.6.0, ip=192.168.1.224}, zipkinSharedRpcSpan=false, expandExceptionLogs=false, useTraceId128Bit=false)
+2022-03-17 16:10:44,437 INFO  [org.jboss.weld.Version] (MSC service thread 1-1) WELD-000900: 4.0.2 (Final)
+2022-03-17 16:10:44,770 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-7) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2022-03-17 16:10:46,111 INFO  [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 78) Initializing Mojarra 3.0.0.SP04 for context '/KISSProject'
+2022-03-17 16:10:47,406 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 78) Running on PrimeFaces 11.0.0
+2022-03-17 16:10:47,472 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 78) WFLYUT0021: Registered web context: '/KISSProject' for server 'default-server'
+2022-03-17 16:10:47,639 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "KISSProject.war" (runtime-name : "KISSProject.war")
+2022-03-17 16:10:47,641 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "postgresql-42.3.1.jar" (runtime-name : "postgresql-42.3.1.jar")
+2022-03-17 16:10:47,642 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "mysql-connector-java-8.0.27.jar" (runtime-name : "mysql-connector-java-8.0.27.jar")
+2022-03-17 16:10:47,780 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2022-03-17 16:10:47,783 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Preview 26.0.1.Final (WildFly Core 18.0.4.Final) started in 17121ms - Started 668 of 869 services (349 services are lazy, passive or on-demand)
+2022-03-17 16:10:47,787 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2022-03-17 16:10:47,787 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2022-03-17 16:10:48,155 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 78) WFLYUT0022: Unregistered web context: '/KISSProject' from server 'default-server'
+2022-03-17 16:10:48,298 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment KISSProject.war (runtime-name: KISSProject.war) in 164ms
+2022-03-17 16:10:48,402 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "KISSProject.war" (runtime-name: "KISSProject.war")
+2022-03-17 16:10:48,650 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "KISSProject.war" (runtime-name: "KISSProject.war")
+2022-03-17 16:10:49,157 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment KISSProject.war
+2022-03-17 16:10:49,222 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'TipVinjetePostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:app/KISSProject/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:module/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:global/KISSProject/TipVinjetePostgresDao
+	java:app/KISSProject/TipVinjetePostgresDao
+	java:module/TipVinjetePostgresDao
+
+2022-03-17 16:10:49,223 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'NakupPostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:app/KISSProject/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:module/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:global/KISSProject/NakupPostgresDao
+	java:app/KISSProject/NakupPostgresDao
+	java:module/NakupPostgresDao
+
+2022-03-17 16:10:49,223 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'ProdajalecPostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:app/KISSProject/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:module/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:global/KISSProject/ProdajalecPostgresDao
+	java:app/KISSProject/ProdajalecPostgresDao
+	java:module/ProdajalecPostgresDao
+
+2022-03-17 16:10:49,297 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-2) No shutdown hook registered: Please call close() manually on application shutdown.
+2022-03-17 16:10:49,298 INFO  [org.wildfly.microprofile.opentracing.smallrye] (MSC service thread 1-2) WFLYTRAC0001: Tracer initialized: JaegerTracer(version=Java-1.6.0, serviceName=KISSProject.war, reporter=RemoteReporter(sender=org.wildfly.extension.microprofile.opentracing.spi.sender.WildFlySender@2d811a88, closeEnqueueTimeout=1000), sampler=ConstSampler(decision=true, tags={sampler.type=const, sampler.param=true}), tags={hostname=Sasas-MBP.localdomain, jaeger.version=Java-1.6.0, ip=192.168.1.224}, zipkinSharedRpcSpan=false, expandExceptionLogs=false, useTraceId128Bit=false)
+2022-03-17 16:10:49,627 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-4) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2022-03-17 16:10:50,204 INFO  [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 26) Initializing Mojarra 3.0.0.SP04 for context '/KISSProject'
+2022-03-17 16:10:50,644 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 26) Running on PrimeFaces 11.0.0
+2022-03-17 16:10:50,655 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 26) WFLYUT0021: Registered web context: '/KISSProject' for server 'default-server'
+2022-03-17 16:10:50,732 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "KISSProject.war" (runtime-name : "KISSProject.war")
+2022-03-17 16:11:50,164 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-1) DAO: Returning All - Nakup
+2022-03-17 16:11:50,453 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-1) DAO: Finding - TipVinjete: 6
+2022-03-17 16:11:50,462 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-1) DAO: Finding - Prodajalec 2
+2022-03-17 16:11:50,467 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-1) DAO: Finding - TipVinjete: 8
+2022-03-17 16:11:50,472 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-1) DAO: Finding - Prodajalec 2
+2022-03-17 16:11:55,359 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Returning All - Tip Vinjete
+2022-03-17 16:12:01,899 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:12:04,286 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Finding - Nakup 0
+2022-03-17 16:12:04,361 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Returning All - Tip Vinjete
+2022-03-17 16:12:04,377 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Returning All - Prodajalec
+2022-03-17 16:12:11,056 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Returning All - Tip Vinjete
+2022-03-17 16:12:11,095 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Returning All - Prodajalec
+2022-03-17 16:12:11,117 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Returning All - Tip Vinjete
+2022-03-17 16:12:11,124 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Returning All - Tip Vinjete
+2022-03-17 16:12:11,139 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Returning All - Prodajalec
+2022-03-17 16:12:11,152 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Returning All - Prodajalec
+2022-03-17 16:12:11,162 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Finding - Nakup 0
+2022-03-17 16:12:11,172 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:12:11,185 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:12:11,193 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Saving si.um.feri.aiv.vao.Nakup@178dc845
+2022-03-17 16:12:11,197 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Finding - Nakup null
+2022-03-17 16:12:11,207 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Saving 1
+2022-03-17 16:12:11,207 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:12:11,253 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Returning All - Nakup
+2022-03-17 16:12:11,261 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 16:12:11,263 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:12:11,270 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 8
+2022-03-17 16:12:11,273 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:12:11,281 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:12:11,284 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:12:17,468 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Checking for valid Vinjeta: 4
+2022-03-17 16:12:17,470 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Finding - Nakup 4
+2022-03-17 16:12:17,482 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:12:17,485 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:12:17,489 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) [si.um.feri.aiv.vao.Nakup@58e5f7c]
+2022-03-17 16:12:31,773 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Finding - Nakup 0
+2022-03-17 16:12:31,835 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Returning All - Tip Vinjete
+2022-03-17 16:12:31,854 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Returning All - Prodajalec
+2022-03-17 16:12:38,771 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Returning All - Tip Vinjete
+2022-03-17 16:12:38,780 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Returning All - Prodajalec
+2022-03-17 16:12:38,793 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Returning All - Tip Vinjete
+2022-03-17 16:12:38,804 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Returning All - Tip Vinjete
+2022-03-17 16:12:38,818 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Returning All - Prodajalec
+2022-03-17 16:12:38,824 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Returning All - Prodajalec
+2022-03-17 16:12:38,829 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Finding - Nakup 0
+2022-03-17 16:12:38,838 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:12:38,843 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:12:38,850 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Saving si.um.feri.aiv.vao.Nakup@387f6b4c
+2022-03-17 16:12:38,854 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Finding - Nakup null
+2022-03-17 16:12:38,857 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Saving 1
+2022-03-17 16:12:38,857 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:12:38,894 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Returning All - Nakup
+2022-03-17 16:12:38,901 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 16:12:38,903 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:12:38,906 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 8
+2022-03-17 16:12:38,918 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:12:38,919 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:12:38,921 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:12:38,923 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:12:38,925 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:12:45,637 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Checking for valid Vinjeta: 4
+2022-03-17 16:12:45,637 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Finding - Nakup 4
+2022-03-17 16:12:45,647 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:12:45,654 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:12:45,659 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:12:45,664 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:12:45,671 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) [si.um.feri.aiv.vao.Nakup@1b16ddfb, si.um.feri.aiv.vao.Nakup@73670f54]
+2022-03-17 16:12:49,478 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Finding - Nakup 0
+2022-03-17 16:12:49,521 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Returning All - Tip Vinjete
+2022-03-17 16:12:49,539 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Returning All - Prodajalec
+2022-03-17 16:12:57,439 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Returning All - Tip Vinjete
+2022-03-17 16:12:57,456 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Returning All - Prodajalec
+2022-03-17 16:12:57,470 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Returning All - Tip Vinjete
+2022-03-17 16:12:57,477 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Returning All - Tip Vinjete
+2022-03-17 16:12:57,487 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Returning All - Prodajalec
+2022-03-17 16:12:57,495 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Returning All - Prodajalec
+2022-03-17 16:12:57,504 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Finding - Nakup 0
+2022-03-17 16:12:57,521 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 16:12:57,525 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:12:57,530 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Saving si.um.feri.aiv.vao.Nakup@3d2e51ac
+2022-03-17 16:12:57,532 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Finding - Nakup null
+2022-03-17 16:12:57,533 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Saving 1
+2022-03-17 16:12:57,533 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:12:57,559 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Returning All - Nakup
+2022-03-17 16:12:57,569 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 16:12:57,573 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:12:57,578 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 8
+2022-03-17 16:12:57,580 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:12:57,582 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:12:57,588 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:12:57,591 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:12:57,593 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:12:57,595 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 16:12:57,599 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,519 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Returning All - Nakup
+2022-03-17 16:13:03,530 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 16:13:03,536 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,545 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 8
+2022-03-17 16:13:03,551 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,565 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:13:03,568 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,575 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:13:03,580 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,583 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 16:13:03,586 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,594 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Returning All - Nakup
+2022-03-17 16:13:03,600 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 16:13:03,604 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,610 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 8
+2022-03-17 16:13:03,612 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,615 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:13:03,626 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,630 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:13:03,633 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,637 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 16:13:03,642 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,657 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Returning All - Nakup
+2022-03-17 16:13:03,668 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 16:13:03,677 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,679 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 8
+2022-03-17 16:13:03,681 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,684 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:13:03,689 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,691 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:13:03,693 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,698 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 16:13:03,700 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,714 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Returning All - Nakup
+2022-03-17 16:13:03,718 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 16:13:03,720 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,722 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 8
+2022-03-17 16:13:03,724 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,726 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:13:03,730 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,734 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:13:03,742 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,746 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 16:13:03,748 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,760 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Returning All - Nakup
+2022-03-17 16:13:03,765 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 16:13:03,767 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,769 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 8
+2022-03-17 16:13:03,775 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,778 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:13:03,780 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,782 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:13:03,784 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,786 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 16:13:03,788 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,793 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Returning All - Nakup
+2022-03-17 16:13:03,800 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 16:13:03,801 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,803 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 8
+2022-03-17 16:13:03,804 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,806 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:13:03,808 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,810 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:13:03,811 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,814 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 16:13:03,815 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,819 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Returning All - Nakup
+2022-03-17 16:13:03,822 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 16:13:03,825 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,831 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 8
+2022-03-17 16:13:03,834 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,840 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:13:03,842 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,843 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:13:03,844 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,846 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 16:13:03,847 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,850 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Finding - Nakup 8
+2022-03-17 16:13:03,852 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:13:03,853 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,855 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Deleting 4
+2022-03-17 16:13:03,855 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Finding - Nakup 8
+2022-03-17 16:13:03,856 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:13:03,857 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,858 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Saving 1
+2022-03-17 16:13:03,858 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,878 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Returning All - Nakup
+2022-03-17 16:13:03,883 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 16:13:03,889 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,891 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 8
+2022-03-17 16:13:03,893 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,897 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:13:03,900 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:03,902 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 16:13:03,904 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:06,313 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Checking for valid Vinjeta: 4
+2022-03-17 16:13:06,314 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Finding - Nakup 4
+2022-03-17 16:13:06,333 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:13:06,336 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:06,343 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 16:13:06,347 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:13:06,357 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) [si.um.feri.aiv.vao.Nakup@e37531d, si.um.feri.aiv.vao.Nakup@7f889d11]
+2022-03-17 16:13:59,461 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 93) WFLYUT0022: Unregistered web context: '/KISSProject' from server 'default-server'
+2022-03-17 16:13:59,563 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment KISSProject.war (runtime-name: KISSProject.war) in 118ms
+2022-03-17 16:13:59,621 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "KISSProject.war" (runtime-name: "KISSProject.war")
+2022-03-17 16:13:59,761 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "KISSProject.war" (runtime-name: "KISSProject.war")
+2022-03-17 16:14:00,251 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment KISSProject.war
+2022-03-17 16:14:00,305 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'TipVinjetePostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:app/KISSProject/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:module/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:global/KISSProject/TipVinjetePostgresDao
+	java:app/KISSProject/TipVinjetePostgresDao
+	java:module/TipVinjetePostgresDao
+
+2022-03-17 16:14:00,306 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'NakupPostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:app/KISSProject/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:module/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:global/KISSProject/NakupPostgresDao
+	java:app/KISSProject/NakupPostgresDao
+	java:module/NakupPostgresDao
+
+2022-03-17 16:14:00,306 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'ProdajalecPostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:app/KISSProject/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:module/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:global/KISSProject/ProdajalecPostgresDao
+	java:app/KISSProject/ProdajalecPostgresDao
+	java:module/ProdajalecPostgresDao
+
+2022-03-17 16:14:00,356 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-4) No shutdown hook registered: Please call close() manually on application shutdown.
+2022-03-17 16:14:00,356 INFO  [org.wildfly.microprofile.opentracing.smallrye] (MSC service thread 1-4) WFLYTRAC0001: Tracer initialized: JaegerTracer(version=Java-1.6.0, serviceName=KISSProject.war, reporter=RemoteReporter(sender=org.wildfly.extension.microprofile.opentracing.spi.sender.WildFlySender@489dbeb6, closeEnqueueTimeout=1000), sampler=ConstSampler(decision=true, tags={sampler.type=const, sampler.param=true}), tags={hostname=Sasas-MBP.localdomain, jaeger.version=Java-1.6.0, ip=192.168.1.224}, zipkinSharedRpcSpan=false, expandExceptionLogs=false, useTraceId128Bit=false)
+2022-03-17 16:14:00,588 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-7) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2022-03-17 16:14:01,005 INFO  [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 101) Initializing Mojarra 3.0.0.SP04 for context '/KISSProject'
+2022-03-17 16:14:01,524 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 101) Running on PrimeFaces 11.0.0
+2022-03-17 16:14:01,560 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 101) WFLYUT0021: Registered web context: '/KISSProject' for server 'default-server'
+2022-03-17 16:14:01,660 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "KISSProject.war" (runtime-name : "KISSProject.war")
+2022-03-17 16:14:08,503 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Checking for valid Vinjeta: 4
+2022-03-17 16:14:08,505 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Finding - Nakup 4
+2022-03-17 16:14:08,526 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:14:08,533 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:14:08,541 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 16:14:08,544 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:14:08,549 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) [si.um.feri.aiv.vao.Nakup@6e09f0bd, si.um.feri.aiv.vao.Nakup@1d430c22]
+2022-03-17 16:15:13,727 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 106) WFLYUT0022: Unregistered web context: '/KISSProject' from server 'default-server'
+2022-03-17 16:15:13,792 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment KISSProject.war (runtime-name: KISSProject.war) in 71ms
+2022-03-17 16:15:13,818 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "KISSProject.war" (runtime-name: "KISSProject.war")
+2022-03-17 16:15:13,940 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "KISSProject.war" (runtime-name: "KISSProject.war")
+2022-03-17 16:15:14,537 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0003: Processing weld deployment KISSProject.war
+2022-03-17 16:15:14,620 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'TipVinjetePostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:app/KISSProject/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:module/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:global/KISSProject/TipVinjetePostgresDao
+	java:app/KISSProject/TipVinjetePostgresDao
+	java:module/TipVinjetePostgresDao
+
+2022-03-17 16:15:14,621 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'NakupPostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:app/KISSProject/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:module/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:global/KISSProject/NakupPostgresDao
+	java:app/KISSProject/NakupPostgresDao
+	java:module/NakupPostgresDao
+
+2022-03-17 16:15:14,621 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'ProdajalecPostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:app/KISSProject/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:module/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:global/KISSProject/ProdajalecPostgresDao
+	java:app/KISSProject/ProdajalecPostgresDao
+	java:module/ProdajalecPostgresDao
+
+2022-03-17 16:15:14,784 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-3) No shutdown hook registered: Please call close() manually on application shutdown.
+2022-03-17 16:15:14,790 INFO  [org.wildfly.microprofile.opentracing.smallrye] (MSC service thread 1-3) WFLYTRAC0001: Tracer initialized: JaegerTracer(version=Java-1.6.0, serviceName=KISSProject.war, reporter=RemoteReporter(sender=org.wildfly.extension.microprofile.opentracing.spi.sender.WildFlySender@322695c9, closeEnqueueTimeout=1000), sampler=ConstSampler(decision=true, tags={sampler.type=const, sampler.param=true}), tags={hostname=Sasas-MBP.localdomain, jaeger.version=Java-1.6.0, ip=192.168.1.224}, zipkinSharedRpcSpan=false, expandExceptionLogs=false, useTraceId128Bit=false)
+2022-03-17 16:15:15,092 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-3) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2022-03-17 16:15:15,392 INFO  [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 122) Initializing Mojarra 3.0.0.SP04 for context '/KISSProject'
+2022-03-17 16:15:15,682 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 122) Running on PrimeFaces 11.0.0
+2022-03-17 16:15:15,693 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 122) WFLYUT0021: Registered web context: '/KISSProject' for server 'default-server'
+2022-03-17 16:15:15,737 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "KISSProject.war" (runtime-name : "KISSProject.war")
+2022-03-17 16:15:19,355 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Checking for valid Vinjeta: 4
+2022-03-17 16:15:19,357 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Finding - Nakup 4
+2022-03-17 16:15:19,388 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:15:19,392 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:15:19,396 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 16:15:19,398 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:15:19,401 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) [si.um.feri.aiv.vao.Nakup@1178421c, si.um.feri.aiv.vao.Nakup@51a669c7]
+2022-03-17 16:15:50,066 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 122) WFLYUT0022: Unregistered web context: '/KISSProject' from server 'default-server'
+2022-03-17 16:15:50,131 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment KISSProject.war (runtime-name: KISSProject.war) in 73ms
+2022-03-17 16:15:50,146 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "KISSProject.war" (runtime-name: "KISSProject.war")
+2022-03-17 16:15:50,270 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "KISSProject.war" (runtime-name: "KISSProject.war")
+2022-03-17 16:15:50,634 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0003: Processing weld deployment KISSProject.war
+2022-03-17 16:15:50,707 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'TipVinjetePostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:app/KISSProject/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:module/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:global/KISSProject/TipVinjetePostgresDao
+	java:app/KISSProject/TipVinjetePostgresDao
+	java:module/TipVinjetePostgresDao
+
+2022-03-17 16:15:50,707 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'NakupPostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:app/KISSProject/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:module/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:global/KISSProject/NakupPostgresDao
+	java:app/KISSProject/NakupPostgresDao
+	java:module/NakupPostgresDao
+
+2022-03-17 16:15:50,707 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'ProdajalecPostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:app/KISSProject/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:module/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:global/KISSProject/ProdajalecPostgresDao
+	java:app/KISSProject/ProdajalecPostgresDao
+	java:module/ProdajalecPostgresDao
+
+2022-03-17 16:15:50,740 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-7) No shutdown hook registered: Please call close() manually on application shutdown.
+2022-03-17 16:15:50,741 INFO  [org.wildfly.microprofile.opentracing.smallrye] (MSC service thread 1-7) WFLYTRAC0001: Tracer initialized: JaegerTracer(version=Java-1.6.0, serviceName=KISSProject.war, reporter=RemoteReporter(sender=org.wildfly.extension.microprofile.opentracing.spi.sender.WildFlySender@6760f4ea, closeEnqueueTimeout=1000), sampler=ConstSampler(decision=true, tags={sampler.type=const, sampler.param=true}), tags={hostname=Sasas-MBP.localdomain, jaeger.version=Java-1.6.0, ip=192.168.1.224}, zipkinSharedRpcSpan=false, expandExceptionLogs=false, useTraceId128Bit=false)
+2022-03-17 16:15:51,104 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-3) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2022-03-17 16:15:51,411 INFO  [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 136) Initializing Mojarra 3.0.0.SP04 for context '/KISSProject'
+2022-03-17 16:15:51,662 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 136) Running on PrimeFaces 11.0.0
+2022-03-17 16:15:51,666 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 136) WFLYUT0021: Registered web context: '/KISSProject' for server 'default-server'
+2022-03-17 16:15:51,730 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "KISSProject.war" (runtime-name : "KISSProject.war")
+2022-03-17 16:15:58,882 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Checking for valid Vinjeta: 4
+2022-03-17 16:15:58,883 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Finding - Nakup 4
+2022-03-17 16:15:58,904 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:15:58,910 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:15:58,913 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 16:15:58,919 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:15:58,924 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) [si.um.feri.aiv.vao.Nakup@242aeb33, si.um.feri.aiv.vao.Nakup@6e15e7db]
+2022-03-17 16:17:27,238 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 139) WFLYUT0022: Unregistered web context: '/KISSProject' from server 'default-server'
+2022-03-17 16:17:27,287 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment KISSProject.war (runtime-name: KISSProject.war) in 52ms
+2022-03-17 16:17:27,309 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "KISSProject.war" (runtime-name: "KISSProject.war")
+2022-03-17 16:17:27,442 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "KISSProject.war" (runtime-name: "KISSProject.war")
+2022-03-17 16:17:27,835 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0003: Processing weld deployment KISSProject.war
+2022-03-17 16:17:27,905 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'TipVinjetePostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:app/KISSProject/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:module/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:global/KISSProject/TipVinjetePostgresDao
+	java:app/KISSProject/TipVinjetePostgresDao
+	java:module/TipVinjetePostgresDao
+
+2022-03-17 16:17:27,906 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'NakupPostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:app/KISSProject/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:module/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:global/KISSProject/NakupPostgresDao
+	java:app/KISSProject/NakupPostgresDao
+	java:module/NakupPostgresDao
+
+2022-03-17 16:17:27,906 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'ProdajalecPostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:app/KISSProject/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:module/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:global/KISSProject/ProdajalecPostgresDao
+	java:app/KISSProject/ProdajalecPostgresDao
+	java:module/ProdajalecPostgresDao
+
+2022-03-17 16:17:27,998 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-7) No shutdown hook registered: Please call close() manually on application shutdown.
+2022-03-17 16:17:28,000 INFO  [org.wildfly.microprofile.opentracing.smallrye] (MSC service thread 1-7) WFLYTRAC0001: Tracer initialized: JaegerTracer(version=Java-1.6.0, serviceName=KISSProject.war, reporter=RemoteReporter(sender=org.wildfly.extension.microprofile.opentracing.spi.sender.WildFlySender@7d36ee51, closeEnqueueTimeout=1000), sampler=ConstSampler(decision=true, tags={sampler.type=const, sampler.param=true}), tags={hostname=Sasas-MBP.localdomain, jaeger.version=Java-1.6.0, ip=192.168.1.224}, zipkinSharedRpcSpan=false, expandExceptionLogs=false, useTraceId128Bit=false)
+2022-03-17 16:17:28,533 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-5) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2022-03-17 16:17:28,948 INFO  [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 146) Initializing Mojarra 3.0.0.SP04 for context '/KISSProject'
+2022-03-17 16:17:29,230 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 146) Running on PrimeFaces 11.0.0
+2022-03-17 16:17:29,234 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 146) WFLYUT0021: Registered web context: '/KISSProject' for server 'default-server'
+2022-03-17 16:17:29,279 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "KISSProject.war" (runtime-name : "KISSProject.war")
+2022-03-17 16:17:45,955 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Checking for valid Vinjeta: 4
+2022-03-17 16:17:45,957 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Finding - Nakup 4
+2022-03-17 16:17:45,976 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 16:17:45,985 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:17:45,990 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 16:17:45,998 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 16:17:46,001 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) [si.um.feri.aiv.vao.Nakup@455167ff, si.um.feri.aiv.vao.Nakup@6f5b99dc]
+2022-03-17 16:18:13,852 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 152) WFLYUT0022: Unregistered web context: '/KISSProject' from server 'default-server'
+2022-03-17 16:18:13,902 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment KISSProject.war (runtime-name: KISSProject.war) in 54ms
+2022-03-17 16:18:13,911 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "KISSProject.war" (runtime-name: "KISSProject.war")
+2022-03-17 16:18:14,046 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "KISSProject.war" (runtime-name: "KISSProject.war")
+2022-03-17 16:18:14,393 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0003: Processing weld deployment KISSProject.war
+2022-03-17 16:18:14,432 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'TipVinjetePostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:app/KISSProject/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:module/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:global/KISSProject/TipVinjetePostgresDao
+	java:app/KISSProject/TipVinjetePostgresDao
+	java:module/TipVinjetePostgresDao
+
+2022-03-17 16:18:14,433 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'NakupPostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:app/KISSProject/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:module/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:global/KISSProject/NakupPostgresDao
+	java:app/KISSProject/NakupPostgresDao
+	java:module/NakupPostgresDao
+
+2022-03-17 16:18:14,433 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'ProdajalecPostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:app/KISSProject/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:module/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:global/KISSProject/ProdajalecPostgresDao
+	java:app/KISSProject/ProdajalecPostgresDao
+	java:module/ProdajalecPostgresDao
+
+2022-03-17 16:18:14,466 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-3) No shutdown hook registered: Please call close() manually on application shutdown.
+2022-03-17 16:18:14,466 INFO  [org.wildfly.microprofile.opentracing.smallrye] (MSC service thread 1-3) WFLYTRAC0001: Tracer initialized: JaegerTracer(version=Java-1.6.0, serviceName=KISSProject.war, reporter=RemoteReporter(sender=org.wildfly.extension.microprofile.opentracing.spi.sender.WildFlySender@4d9fc877, closeEnqueueTimeout=1000), sampler=ConstSampler(decision=true, tags={sampler.type=const, sampler.param=true}), tags={hostname=Sasas-MBP.localdomain, jaeger.version=Java-1.6.0, ip=192.168.1.224}, zipkinSharedRpcSpan=false, expandExceptionLogs=false, useTraceId128Bit=false)
+2022-03-17 16:18:14,637 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-4) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2022-03-17 16:18:14,832 INFO  [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 161) Initializing Mojarra 3.0.0.SP04 for context '/KISSProject'
+2022-03-17 16:18:15,280 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 161) Running on PrimeFaces 11.0.0
+2022-03-17 16:18:15,288 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 161) WFLYUT0021: Registered web context: '/KISSProject' for server 'default-server'
+2022-03-17 16:18:15,326 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "KISSProject.war" (runtime-name : "KISSProject.war")
+2022-03-17 16:18:50,189 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-11) DAO: Checking for valid Vinjeta: 4
+2022-03-17 16:18:50,190 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-11) DAO: Finding - Nakup 4
+2022-03-17 16:18:50,214 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-11) DAO: Finding - TipVinjete: 5
+2022-03-17 16:18:50,225 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-11) DAO: Finding - Prodajalec 2
+2022-03-17 16:18:50,231 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-11) DAO: Finding - TipVinjete: 6
+2022-03-17 16:18:50,236 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-11) DAO: Finding - Prodajalec 2
+2022-03-17 16:18:50,238 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-11) [si.um.feri.aiv.vao.Nakup@145a7d0c, si.um.feri.aiv.vao.Nakup@35975abe]
+2022-03-17 16:19:28,981 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 161) WFLYUT0022: Unregistered web context: '/KISSProject' from server 'default-server'
+2022-03-17 16:19:29,033 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment KISSProject.war (runtime-name: KISSProject.war) in 56ms
+2022-03-17 16:19:29,048 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "KISSProject.war" (runtime-name: "KISSProject.war")
+2022-03-17 16:19:29,172 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "KISSProject.war" (runtime-name: "KISSProject.war")
+2022-03-17 16:19:29,553 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0003: Processing weld deployment KISSProject.war
+2022-03-17 16:19:29,589 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'TipVinjetePostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:app/KISSProject/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:module/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:global/KISSProject/TipVinjetePostgresDao
+	java:app/KISSProject/TipVinjetePostgresDao
+	java:module/TipVinjetePostgresDao
+
+2022-03-17 16:19:29,590 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'NakupPostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:app/KISSProject/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:module/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:global/KISSProject/NakupPostgresDao
+	java:app/KISSProject/NakupPostgresDao
+	java:module/NakupPostgresDao
+
+2022-03-17 16:19:29,590 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'ProdajalecPostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:app/KISSProject/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:module/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:global/KISSProject/ProdajalecPostgresDao
+	java:app/KISSProject/ProdajalecPostgresDao
+	java:module/ProdajalecPostgresDao
+
+2022-03-17 16:19:29,633 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-8) No shutdown hook registered: Please call close() manually on application shutdown.
+2022-03-17 16:19:29,633 INFO  [org.wildfly.microprofile.opentracing.smallrye] (MSC service thread 1-8) WFLYTRAC0001: Tracer initialized: JaegerTracer(version=Java-1.6.0, serviceName=KISSProject.war, reporter=RemoteReporter(sender=org.wildfly.extension.microprofile.opentracing.spi.sender.WildFlySender@4ccb1138, closeEnqueueTimeout=1000), sampler=ConstSampler(decision=true, tags={sampler.type=const, sampler.param=true}), tags={hostname=Sasas-MBP.localdomain, jaeger.version=Java-1.6.0, ip=192.168.1.224}, zipkinSharedRpcSpan=false, expandExceptionLogs=false, useTraceId128Bit=false)
+2022-03-17 16:19:29,840 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-1) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2022-03-17 16:19:30,038 INFO  [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 173) Initializing Mojarra 3.0.0.SP04 for context '/KISSProject'
+2022-03-17 16:19:30,465 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 173) Running on PrimeFaces 11.0.0
+2022-03-17 16:19:30,493 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 173) WFLYUT0021: Registered web context: '/KISSProject' for server 'default-server'
+2022-03-17 16:19:30,547 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "KISSProject.war" (runtime-name : "KISSProject.war")
+2022-03-17 16:19:34,188 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-12) DAO: Checking for valid Vinjeta: 4
+2022-03-17 16:19:34,189 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-12) DAO: Finding - Nakup 4
+2022-03-17 16:19:34,205 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-12) DAO: Finding - TipVinjete: 5
+2022-03-17 16:19:34,211 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-12) DAO: Finding - Prodajalec 2
+2022-03-17 16:19:34,216 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-12) DAO: Finding - TipVinjete: 6
+2022-03-17 16:19:34,220 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-12) DAO: Finding - Prodajalec 2
+2022-03-17 16:19:34,227 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-12) [si.um.feri.aiv.vao.Nakup@4e7b484e, si.um.feri.aiv.vao.Nakup@77239501]
+2022-03-17 16:19:53,415 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 175) WFLYUT0022: Unregistered web context: '/KISSProject' from server 'default-server'
+2022-03-17 16:19:53,458 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment KISSProject.war (runtime-name: KISSProject.war) in 51ms
+2022-03-17 16:19:53,476 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "KISSProject.war" (runtime-name: "KISSProject.war")
+2022-03-17 16:19:53,577 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "KISSProject.war" (runtime-name: "KISSProject.war")
+2022-03-17 16:19:53,872 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0003: Processing weld deployment KISSProject.war
+2022-03-17 16:19:53,908 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'TipVinjetePostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:app/KISSProject/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:module/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:global/KISSProject/TipVinjetePostgresDao
+	java:app/KISSProject/TipVinjetePostgresDao
+	java:module/TipVinjetePostgresDao
+
+2022-03-17 16:19:53,908 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'NakupPostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:app/KISSProject/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:module/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:global/KISSProject/NakupPostgresDao
+	java:app/KISSProject/NakupPostgresDao
+	java:module/NakupPostgresDao
+
+2022-03-17 16:19:53,908 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'ProdajalecPostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:app/KISSProject/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:module/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:global/KISSProject/ProdajalecPostgresDao
+	java:app/KISSProject/ProdajalecPostgresDao
+	java:module/ProdajalecPostgresDao
+
+2022-03-17 16:19:53,939 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-8) No shutdown hook registered: Please call close() manually on application shutdown.
+2022-03-17 16:19:53,939 INFO  [org.wildfly.microprofile.opentracing.smallrye] (MSC service thread 1-8) WFLYTRAC0001: Tracer initialized: JaegerTracer(version=Java-1.6.0, serviceName=KISSProject.war, reporter=RemoteReporter(sender=org.wildfly.extension.microprofile.opentracing.spi.sender.WildFlySender@65d07b94, closeEnqueueTimeout=1000), sampler=ConstSampler(decision=true, tags={sampler.type=const, sampler.param=true}), tags={hostname=Sasas-MBP.localdomain, jaeger.version=Java-1.6.0, ip=192.168.1.224}, zipkinSharedRpcSpan=false, expandExceptionLogs=false, useTraceId128Bit=false)
+2022-03-17 16:19:54,143 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-3) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2022-03-17 16:19:54,520 INFO  [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 180) Initializing Mojarra 3.0.0.SP04 for context '/KISSProject'
+2022-03-17 16:19:54,818 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 180) Running on PrimeFaces 11.0.0
+2022-03-17 16:19:54,824 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 180) WFLYUT0021: Registered web context: '/KISSProject' for server 'default-server'
+2022-03-17 16:19:54,873 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "KISSProject.war" (runtime-name : "KISSProject.war")
+2022-03-17 16:29:06,277 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0009: Content /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/22/9ec354332e0f9bbe28971812a34880391b50ad is obsolete and will be removed
+2022-03-17 16:29:06,293 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0002: Content removed from location /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/22/9ec354332e0f9bbe28971812a34880391b50ad/content
+2022-03-17 17:31:54,573 ERROR [io.undertow.request] (default task-12) UT005023: Exception handling request to /KISSProject/faces/preveri.xhtml: jakarta.servlet.ServletException: viewId:/preveri.xhtml - View /preveri.xhtml could not be restored.
+	at jakarta.faces.api//jakarta.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:699)
+	at jakarta.faces.api//jakarta.faces.webapp.FacesServlet.service(FacesServlet.java:437)
+	at io.undertow.servlet@2.2.14.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet@2.2.14.Final//io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at io.opentracing.contrib.opentracing-jaxrs2//io.opentracing.contrib.jaxrs2.server.SpanFinishingFilter.doFilter(SpanFinishingFilter.java:52)
+	at io.undertow.servlet@2.2.14.Final//io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet@2.2.14.Final//io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet@2.2.14.Final//io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet@2.2.14.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet@2.2.14.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet@2.2.14.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.security.elytron-web.undertow-server@1.10.1.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.lambda$handleRequest$1(ElytronRunAsHandler.java:68)
+	at org.wildfly.security.elytron-base@1.18.3.Final//org.wildfly.security.auth.server.FlexibleIdentityAssociation.runAsFunctionEx(FlexibleIdentityAssociation.java:103)
+	at org.wildfly.security.elytron-base@1.18.3.Final//org.wildfly.security.auth.server.Scoped.runAsFunctionEx(Scoped.java:161)
+	at org.wildfly.security.elytron-base@1.18.3.Final//org.wildfly.security.auth.server.Scoped.runAs(Scoped.java:73)
+	at org.wildfly.security.elytron-web.undertow-server@1.10.1.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.handleRequest(ElytronRunAsHandler.java:67)
+	at io.undertow.servlet@2.2.14.Final//io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet@2.2.14.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+	at io.undertow.servlet@2.2.14.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.core@2.2.14.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.core@2.2.14.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet@2.2.14.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.core@2.2.14.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at org.wildfly.security.elytron-web.undertow-server-servlet@2.0.0.Beta1//org.wildfly.elytron.web.undertow.server.servlet.CleanUpHandler.handleRequest(CleanUpHandler.java:38)
+	at io.undertow.core@2.2.14.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@26.0.1.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.core@2.2.14.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@26.0.1.Final//org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:68)
+	at io.undertow.servlet@2.2.14.Final//io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.core@2.2.14.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.2.14.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:275)
+	at io.undertow.servlet@2.2.14.Final//io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:79)
+	at io.undertow.servlet@2.2.14.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:134)
+	at io.undertow.servlet@2.2.14.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:131)
+	at io.undertow.servlet@2.2.14.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet@2.2.14.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@26.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1544)
+	at org.wildfly.extension.undertow@26.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1544)
+	at org.wildfly.extension.undertow@26.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1544)
+	at org.wildfly.extension.undertow@26.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1544)
+	at io.undertow.servlet@2.2.14.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:255)
+	at io.undertow.servlet@2.2.14.Final//io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:79)
+	at io.undertow.servlet@2.2.14.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:100)
+	at io.undertow.core@2.2.14.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:387)
+	at io.undertow.core@2.2.14.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:852)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at org.jboss.xnio@3.8.5.Final//org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1280)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: jakarta.faces.application.ViewExpiredException: viewId:/preveri.xhtml - View /preveri.xhtml could not be restored.
+	at com.sun.jsf-impl@3.0.0.SP04//com.sun.faces.lifecycle.RestoreViewPhase.execute(RestoreViewPhase.java:186)
+	at com.sun.jsf-impl@3.0.0.SP04//com.sun.faces.lifecycle.Phase.doPhase(Phase.java:72)
+	at com.sun.jsf-impl@3.0.0.SP04//com.sun.faces.lifecycle.RestoreViewPhase.doPhase(RestoreViewPhase.java:102)
+	at com.sun.jsf-impl@3.0.0.SP04//com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:159)
+	at jakarta.faces.api//jakarta.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:681)
+	... 50 more
+
+2022-03-17 17:31:58,399 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-12) DAO: Returning All - Tip Vinjete
+2022-03-17 21:47:51,028 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0272: Suspending server
+2022-03-17 21:47:51,055 INFO  [org.jboss.as.ejb3] (management-handler-thread - 2) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2022-03-17 21:47:51,060 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2022-03-17 21:47:51,152 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2022-03-17 21:47:51,153 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/MySqlDS]
+2022-03-17 21:47:51,166 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 191) WFLYUT0022: Unregistered web context: '/KISSProject' from server 'default-server'
+2022-03-17 21:47:51,180 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = mysql-connector-java-8.0.27.jar
+2022-03-17 21:47:51,222 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0019: Host default-host stopping
+2022-03-17 21:47:51,252 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment mysql-connector-java-8.0.27.jar (runtime-name: mysql-connector-java-8.0.27.jar) in 176ms
+2022-03-17 21:47:51,266 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2022-03-17 21:47:51,266 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:jboss/datasources/PostgresDS]
+2022-03-17 21:47:51,268 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = postgresql-42.3.1.jar
+2022-03-17 21:47:51,268 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2022-03-17 21:47:51,276 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment postgresql-42.3.1.jar (runtime-name: postgresql-42.3.1.jar) in 200ms
+2022-03-17 21:47:51,281 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTP listener default suspending
+2022-03-17 21:47:51,281 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0008: Undertow HTTPS listener https suspending
+2022-03-17 21:47:51,282 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2022-03-17 21:47:51,282 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2022-03-17 21:47:51,287 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 193) WFLYCLINF0003: Stopped http-remoting-connector cache from ejb container
+2022-03-17 21:47:51,289 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0004: Undertow 2.2.14.Final stopping
+2022-03-17 21:47:51,289 INFO  [org.infinispan.manager.DefaultCacheManager] (ServerService Thread Pool -- 193) Stopping cache manager null on null
+2022-03-17 21:47:51,297 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment KISSProject.war (runtime-name: KISSProject.war) in 222ms
+2022-03-17 21:47:51,307 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0050: WildFly Preview 26.0.1.Final (WildFly Core 18.0.4.Final) stopped in 242ms
+2022-03-17 21:47:59,304 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.0.Final
+2022-03-17 21:48:00,152 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.13.Final
+2022-03-17 21:48:00,158 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2022-03-17 21:48:00,256 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Preview 26.0.1.Final (WildFly Core 18.0.4.Final) starting
+2022-03-17 21:48:00,258 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	file.encoding = US-ASCII
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	java.awt.headless = true
+	java.class.path = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/jboss-modules.jar
+	java.class.version = 61.0
+	java.home = /Library/Java/JavaVirtualMachines/jdk-17.0.2.jdk/Contents/Home
+	java.io.tmpdir = /var/folders/m1/v1ygjssd255b_vtvd2yx4sxr0000gn/T/
+	java.library.path = /Users/sasavincic/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 17.0.2+8-LTS-86
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = https://java.oracle.com/
+	java.vendor.url.bug = https://bugreport.java.com/bugreport/
+	java.version = 17.0.2
+	java.version.date = 2022-01-18
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode, sharing
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 17.0.2+8-LTS-86
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final
+	jboss.host.name = sasas-mbp
+	jboss.modules.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = sasas-mbp
+	jboss.qualified.host.name = sasas-mbp.localdomain
+	jboss.server.base.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone
+	jboss.server.config.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration
+	jboss.server.data.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data
+	jboss.server.deploy.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content
+	jboss.server.log.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/log
+	jboss.server.name = sasas-mbp
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration/logging.properties
+	module.path = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/modules
+	native.encoding = US-ASCII
+	org.jboss.boot.log.file = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = x86_64
+	os.name = Mac OS X
+	os.version = 12.2.1
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	sun.arch.data.model = 64
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk-17.0.2.jdk/Contents/Home/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/jboss-modules.jar -mp /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/modules org.jboss.as.standalone -Djboss.home.dir=/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final -Djboss.server.base.dir=/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	user.country = SI
+	user.dir = /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/bin
+	user.home = /Users/sasavincic
+	user.language = en
+	user.name = sasavincic
+	user.timezone = Europe/Ljubljana
+2022-03-17 21:48:00,260 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED -Dorg.jboss.boot.log.file=/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/log/server.log -Dlogging.configuration=file:/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration/logging.properties 
+2022-03-17 21:48:01,326 INFO  [org.wildfly.security] (ServerService Thread Pool -- 27) ELY00001: WildFly Elytron version 1.18.3.Final
+2022-03-17 21:48:08,008 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 7) WFLYDR0001: Content added at location /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/a2/4a1ccbdee33821828e41d215cc555e32b2c21c/content
+2022-03-17 21:48:08,110 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2022-03-17 21:48:08,134 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.8.5.Final
+2022-03-17 21:48:08,144 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.8.5.Final
+2022-03-17 21:48:08,182 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 52) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2022-03-17 21:48:08,188 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 65) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2022-03-17 21:48:08,188 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 64) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2022-03-17 21:48:08,196 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 54) WFLYCLINF0001: Activating Infinispan subsystem.
+2022-03-17 21:48:08,210 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 56) WFLYRS0016: RESTEasy version 6.0.0.Beta1
+2022-03-17 21:48:08,235 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 61) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2022-03-17 21:48:08,246 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 66) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2022-03-17 21:48:08,246 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2022-03-17 21:48:08,243 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 67) WFLYNAM0001: Activating Naming Subsystem
+2022-03-17 21:48:08,244 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2022-03-17 21:48:08,281 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 53) WFLYHEALTH0001: Activating Base Health Subsystem
+2022-03-17 21:48:08,282 INFO  [org.jboss.as.naming] (MSC service thread 1-7) WFLYNAM0003: Starting Naming Service
+2022-03-17 21:48:08,281 INFO  [org.jboss.as.connector] (MSC service thread 1-5) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 1.5.3.Final)
+2022-03-17 21:48:08,346 INFO  [org.jboss.remoting] (MSC service thread 1-7) JBoss Remoting version 5.0.23.Final
+2022-03-17 21:48:08,379 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 55) WFLYIO001: Worker 'default' has auto-configured to 20 IO threads with 160 max task threads based on your 10 available processors
+2022-03-17 21:48:08,419 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 63) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2022-03-17 21:48:08,480 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2022-03-17 21:48:08,526 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0003: Undertow 2.2.14.Final starting
+2022-03-17 21:48:08,569 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2022-03-17 21:48:08,609 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = h2
+2022-03-17 21:48:08,636 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 160 (per class), which is derived from thread worker pool sizing.
+2022-03-17 21:48:08,636 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 40 (per class), which is derived from the number of CPUs on this host.
+2022-03-17 21:48:08,742 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path '/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2022-03-17 21:48:08,783 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0012: Started server default-server.
+2022-03-17 21:48:08,818 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) Queuing requests.
+2022-03-17 21:48:08,827 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0018: Host default-host starting
+2022-03-17 21:48:08,863 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-8) WFLYELY00023: KeyStore file '/Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration/application.keystore' does not exist. Used blank.
+2022-03-17 21:48:08,896 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-7) WFLYELY01084: KeyStore /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2022-03-17 21:48:08,940 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2022-03-17 21:48:09,074 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2022-03-17 21:48:09,272 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2022-03-17 21:48:09,314 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2022-03-17 21:48:09,408 INFO  [org.jboss.as.patching] (MSC service thread 1-6) WFLYPAT0050: WildFly Preview cumulative patch ID is: base, one-off patches include: none
+2022-03-17 21:48:09,430 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/deployments
+2022-03-17 21:48:09,436 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "KISSProject.war" (runtime-name: "KISSProject.war")
+2022-03-17 21:48:09,436 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "postgresql-42.3.1.jar" (runtime-name: "postgresql-42.3.1.jar")
+2022-03-17 21:48:09,436 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "mysql-connector-java-8.0.27.jar" (runtime-name: "mysql-connector-java-8.0.27.jar")
+2022-03-17 21:48:09,595 INFO  [org.jboss.ws.common.management] (MSC service thread 1-1) JBWS022052: Starting JBossWS 5.4.4.Final (Apache CXF 3.4.5) 
+2022-03-17 21:48:11,389 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.cj.jdbc.Driver (version 8.0)
+2022-03-17 21:48:11,393 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.3)
+2022-03-17 21:48:11,423 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = postgresql-42.3.1.jar
+2022-03-17 21:48:11,423 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = mysql-connector-java-8.0.27.jar
+2022-03-17 21:48:11,453 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/PostgresDS]
+2022-03-17 21:48:11,453 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Bound data source [java:jboss/datasources/MySqlDS]
+2022-03-17 21:48:11,846 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0003: Processing weld deployment KISSProject.war
+2022-03-17 21:48:11,974 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 80) ISPN000128: Infinispan version: Infinispan 'Taedonggang' 12.1.7.Final
+2022-03-17 21:48:12,015 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-1) HV000001: Hibernate Validator 7.0.1.Final
+2022-03-17 21:48:12,044 INFO  [org.infinispan.CONFIG] (MSC service thread 1-3) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2022-03-17 21:48:12,046 INFO  [org.infinispan.CONFIG] (MSC service thread 1-3) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2022-03-17 21:48:12,094 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 80) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.spi.marshalling.InfinispanProtoStreamMarshaller'
+2022-03-17 21:48:12,168 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'TipVinjetePostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:app/KISSProject/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:module/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:global/KISSProject/TipVinjetePostgresDao
+	java:app/KISSProject/TipVinjetePostgresDao
+	java:module/TipVinjetePostgresDao
+
+2022-03-17 21:48:12,168 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'NakupPostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:app/KISSProject/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:module/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:global/KISSProject/NakupPostgresDao
+	java:app/KISSProject/NakupPostgresDao
+	java:module/NakupPostgresDao
+
+2022-03-17 21:48:12,168 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'ProdajalecPostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:app/KISSProject/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:module/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:global/KISSProject/ProdajalecPostgresDao
+	java:app/KISSProject/ProdajalecPostgresDao
+	java:module/ProdajalecPostgresDao
+
+2022-03-17 21:48:12,170 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'KontrolorRemoteBean' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/KontrolorRemoteBean!si.um.feri.aiv.dao.KontrolorRemote
+	java:app/KISSProject/KontrolorRemoteBean!si.um.feri.aiv.dao.KontrolorRemote
+	java:module/KontrolorRemoteBean!si.um.feri.aiv.dao.KontrolorRemote
+	java:jboss/exported/KISSProject/KontrolorRemoteBean!si.um.feri.aiv.dao.KontrolorRemote
+	ejb:/KISSProject/KontrolorRemoteBean!si.um.feri.aiv.dao.KontrolorRemote
+	java:global/KISSProject/KontrolorRemoteBean
+	java:app/KISSProject/KontrolorRemoteBean
+	java:module/KontrolorRemoteBean
+
+2022-03-17 21:48:12,191 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 80) ISPN000025: wakeUpInterval is <= 0, not starting expired purge thread
+2022-03-17 21:48:12,238 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 80) WFLYCLINF0002: Started http-remoting-connector cache from ejb container
+2022-03-17 21:48:12,343 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-1) No shutdown hook registered: Please call close() manually on application shutdown.
+2022-03-17 21:48:12,344 INFO  [org.wildfly.microprofile.opentracing.smallrye] (MSC service thread 1-1) WFLYTRAC0001: Tracer initialized: JaegerTracer(version=Java-1.6.0, serviceName=KISSProject.war, reporter=RemoteReporter(sender=org.wildfly.extension.microprofile.opentracing.spi.sender.WildFlySender@ee49cd, closeEnqueueTimeout=1000), sampler=ConstSampler(decision=true, tags={sampler.type=const, sampler.param=true}), tags={hostname=Sasas-MBP.localdomain, jaeger.version=Java-1.6.0, ip=192.168.1.224}, zipkinSharedRpcSpan=false, expandExceptionLogs=false, useTraceId128Bit=false)
+2022-03-17 21:48:12,667 INFO  [org.jboss.weld.Version] (MSC service thread 1-2) WELD-000900: 4.0.2 (Final)
+2022-03-17 21:48:13,061 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-2) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2022-03-17 21:48:14,338 INFO  [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 92) Initializing Mojarra 3.0.0.SP04 for context '/KISSProject'
+2022-03-17 21:48:15,567 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 92) Running on PrimeFaces 11.0.0
+2022-03-17 21:48:15,605 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 92) WFLYUT0021: Registered web context: '/KISSProject' for server 'default-server'
+2022-03-17 21:48:15,769 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "KISSProject.war" (runtime-name : "KISSProject.war")
+2022-03-17 21:48:15,773 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "postgresql-42.3.1.jar" (runtime-name : "postgresql-42.3.1.jar")
+2022-03-17 21:48:15,774 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "mysql-connector-java-8.0.27.jar" (runtime-name : "mysql-connector-java-8.0.27.jar")
+2022-03-17 21:48:15,921 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2022-03-17 21:48:15,924 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Preview 26.0.1.Final (WildFly Core 18.0.4.Final) started in 17177ms - Started 687 of 887 services (349 services are lazy, passive or on-demand)
+2022-03-17 21:48:15,929 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2022-03-17 21:48:15,929 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2022-03-17 21:48:16,560 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 92) WFLYUT0022: Unregistered web context: '/KISSProject' from server 'default-server'
+2022-03-17 21:48:16,698 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment KISSProject.war (runtime-name: KISSProject.war) in 145ms
+2022-03-17 21:48:16,814 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "KISSProject.war" (runtime-name: "KISSProject.war")
+2022-03-17 21:48:17,023 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "KISSProject.war" (runtime-name: "KISSProject.war")
+2022-03-17 21:48:17,521 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0003: Processing weld deployment KISSProject.war
+2022-03-17 21:48:17,585 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'TipVinjetePostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:app/KISSProject/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:module/TipVinjetePostgresDao!si.um.feri.aiv.dao.TipVinjeteDao
+	java:global/KISSProject/TipVinjetePostgresDao
+	java:app/KISSProject/TipVinjetePostgresDao
+	java:module/TipVinjetePostgresDao
+
+2022-03-17 21:48:17,585 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'NakupPostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:app/KISSProject/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:module/NakupPostgresDao!si.um.feri.aiv.dao.NakupDao
+	java:global/KISSProject/NakupPostgresDao
+	java:app/KISSProject/NakupPostgresDao
+	java:module/NakupPostgresDao
+
+2022-03-17 21:48:17,585 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'ProdajalecPostgresDao' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:app/KISSProject/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:module/ProdajalecPostgresDao!si.um.feri.aiv.dao.ProdajalecDao
+	java:global/KISSProject/ProdajalecPostgresDao
+	java:app/KISSProject/ProdajalecPostgresDao
+	java:module/ProdajalecPostgresDao
+
+2022-03-17 21:48:17,586 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'KontrolorRemoteBean' in deployment unit 'deployment "KISSProject.war"' are as follows:
+
+	java:global/KISSProject/KontrolorRemoteBean!si.um.feri.aiv.dao.KontrolorRemote
+	java:app/KISSProject/KontrolorRemoteBean!si.um.feri.aiv.dao.KontrolorRemote
+	java:module/KontrolorRemoteBean!si.um.feri.aiv.dao.KontrolorRemote
+	java:jboss/exported/KISSProject/KontrolorRemoteBean!si.um.feri.aiv.dao.KontrolorRemote
+	ejb:/KISSProject/KontrolorRemoteBean!si.um.feri.aiv.dao.KontrolorRemote
+	java:global/KISSProject/KontrolorRemoteBean
+	java:app/KISSProject/KontrolorRemoteBean
+	java:module/KontrolorRemoteBean
+
+2022-03-17 21:48:17,657 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-6) No shutdown hook registered: Please call close() manually on application shutdown.
+2022-03-17 21:48:17,658 INFO  [org.wildfly.microprofile.opentracing.smallrye] (MSC service thread 1-6) WFLYTRAC0001: Tracer initialized: JaegerTracer(version=Java-1.6.0, serviceName=KISSProject.war, reporter=RemoteReporter(sender=org.wildfly.extension.microprofile.opentracing.spi.sender.WildFlySender@6ff5ac47, closeEnqueueTimeout=1000), sampler=ConstSampler(decision=true, tags={sampler.type=const, sampler.param=true}), tags={hostname=Sasas-MBP.localdomain, jaeger.version=Java-1.6.0, ip=192.168.1.224}, zipkinSharedRpcSpan=false, expandExceptionLogs=false, useTraceId128Bit=false)
+2022-03-17 21:48:17,978 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-4) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2022-03-17 21:48:18,452 INFO  [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 20) Initializing Mojarra 3.0.0.SP04 for context '/KISSProject'
+2022-03-17 21:48:19,060 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 20) Running on PrimeFaces 11.0.0
+2022-03-17 21:48:19,089 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 20) WFLYUT0021: Registered web context: '/KISSProject' for server 'default-server'
+2022-03-17 21:48:19,186 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "KISSProject.war" (runtime-name : "KISSProject.war")
+2022-03-17 21:48:51,803 INFO  [org.wildfly.naming] (default task-1) WildFly Naming version 1.0.14.Final
+2022-03-17 21:48:51,811 INFO  [org.jboss.ejb.client] (default task-2) JBoss EJB Client version 4.0.44.Final
+2022-03-17 21:58:00,622 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0009: Content /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/37/bb1c9d8f325a716b1effbae9cac38969f3ed50 is obsolete and will be removed
+2022-03-17 21:58:00,639 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0002: Content removed from location /Users/sasavincic/Development/jee9/wildfly-preview-26.0.1.Final/standalone/data/content/37/bb1c9d8f325a716b1effbae9cac38969f3ed50/content
+2022-03-17 22:08:33,034 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Checking for valid Vinjeta: 4
+2022-03-17 22:08:33,035 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Finding - Nakup 4
+2022-03-17 22:08:33,196 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 22:08:33,203 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 22:08:33,209 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 22:08:33,212 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 22:08:33,216 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) [si.um.feri.aiv.vao.Nakup@236c83a4, si.um.feri.aiv.vao.Nakup@5881c1c8]
+2022-03-17 22:10:58,108 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Returning All - Nakup
+2022-03-17 22:10:58,124 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 22:10:58,127 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 22:10:58,131 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 8
+2022-03-17 22:10:58,134 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 22:10:58,137 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 5
+2022-03-17 22:10:58,141 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 22:10:58,145 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 22:10:58,156 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 22:11:05,158 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-2) DAO: Finding - Nakup 6
+2022-03-17 22:11:05,169 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 22:11:05,173 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - Prodajalec 2
+2022-03-17 22:11:09,520 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-6) DAO: Returning All - Tip Vinjete
+2022-03-17 22:11:11,987 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 22:11:23,811 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-4) DAO: Checking for valid Vinjeta: 2
+2022-03-17 22:11:23,812 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-4) DAO: Finding - Nakup 2
+2022-03-17 22:11:23,820 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-4) DAO: Finding - TipVinjete: 6
+2022-03-17 22:11:23,824 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-4) DAO: Finding - Prodajalec 2
+2022-03-17 22:11:23,829 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-4) [si.um.feri.aiv.vao.Nakup@7e6384a1]
+2022-03-17 22:11:28,106 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 22:11:28,118 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Saving 2
+2022-03-17 22:11:28,123 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 22:11:28,156 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Returning All - Tip Vinjete
+2022-03-17 22:11:34,900 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-4) DAO: Checking for valid Vinjeta: 2
+2022-03-17 22:11:34,901 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-4) DAO: Finding - Nakup 2
+2022-03-17 22:11:34,909 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-4) DAO: Finding - TipVinjete: 6
+2022-03-17 22:11:34,912 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-4) DAO: Finding - Prodajalec 2
+2022-03-17 22:11:34,917 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-4) [si.um.feri.aiv.vao.Nakup@7894d311]
+2022-03-17 22:11:38,268 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-2) DAO: Finding - TipVinjete: 6
+2022-03-17 22:11:40,994 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-6) DAO: Finding - TipVinjete: 6
+2022-03-17 22:11:41,013 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-6) DAO: Saving 2
+2022-03-17 22:11:41,015 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-6) DAO: Finding - TipVinjete: 6
+2022-03-17 22:11:41,052 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-6) DAO: Returning All - Tip Vinjete
+2022-03-17 22:11:47,189 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-6) DAO: Checking for valid Vinjeta: 2
+2022-03-17 22:11:47,190 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-6) DAO: Finding - Nakup 2
+2022-03-17 22:11:47,195 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-6) DAO: Finding - TipVinjete: 6
+2022-03-17 22:11:47,198 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-6) DAO: Finding - Prodajalec 2
+2022-03-17 22:11:47,205 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-6) [si.um.feri.aiv.vao.Nakup@2db33ba4]
+2022-03-17 22:11:53,878 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-4) DAO: Checking for valid Vinjeta: 2
+2022-03-17 22:11:53,879 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-4) DAO: Finding - Nakup 2
+2022-03-17 22:11:53,888 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-4) DAO: Finding - TipVinjete: 6
+2022-03-17 22:11:53,892 INFO  [class si.um.feri.aiv.dao.ProdajalecPostgresDao] (default task-4) DAO: Finding - Prodajalec 2
+2022-03-17 22:11:53,895 INFO  [class si.um.feri.aiv.dao.NakupPostgresDao] (default task-4) [si.um.feri.aiv.vao.Nakup@20898dc3]
